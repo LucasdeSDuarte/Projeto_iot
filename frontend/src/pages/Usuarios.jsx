@@ -9,19 +9,35 @@ const API = import.meta.env.VITE_API_URL;
 export default function Usuarios() {
   const [showForm, setShowForm] = useState(false);
   const [editData, setEditData] = useState(null);
+  
+  // Estado para armazenar os clientes da página atual e as informações de meta
   const [clientes, setClientes] = useState([]);
+  const [meta, setMeta] = useState(null);
+  const [page, setPage] = useState(1);
+
+  // Filtro para pesquisa
   const [filtro, setFiltro] = useState('');
 
   useEffect(() => {
-    carregarClientes();
-  }, []);
+    carregarClientes(page);
+  }, [page]);
 
-  const carregarClientes = async () => {
+  const carregarClientes = async (pagina = 1) => {
     try {
-      const response = await axios.get(`${API}/clientes`);
-      setClientes(response.data);
+      const response = await axios.get(`${API}/clientes?page=${pagina}`);
+      
+      // Se a estrutura estiver dentro de response.data.data e response.data.meta:
+      const data = Array.isArray(response.data.data)
+        ? response.data.data
+        : [];
+      const metaData = response.data.meta ?? null;
+
+      setClientes(data);
+      setMeta(metaData);
     } catch (error) {
       console.error('Erro ao buscar clientes:', error);
+      setClientes([]);
+      setMeta(null);
     }
   };
 
@@ -43,16 +59,33 @@ export default function Usuarios() {
         await axios.post(`${API}/clientes`, data);
       }
       setShowForm(false);
-      carregarClientes();
+      // Recarrega a página atual ao atualizar ou criar
+      carregarClientes(page);
     } catch (error) {
       console.error('Erro ao salvar cliente:', error);
     }
   };
 
-  const clientesFiltrados = clientes.filter((c) =>
-    c.nome.toLowerCase().includes(filtro.toLowerCase()) ||
-    (c.email && c.email.toLowerCase().includes(filtro.toLowerCase()))
-  );
+  // Filtrar clientes localmente pela propriedade nome ou email
+  const clientesFiltrados = Array.isArray(clientes)
+    ? clientes.filter((c) =>
+        c.nome.toLowerCase().includes(filtro.toLowerCase()) ||
+        (c.email && c.email.toLowerCase().includes(filtro.toLowerCase()))
+      )
+    : [];
+
+  // Funções para a navegação na paginação
+  const handleNextPage = () => {
+    if (meta && page < meta.last_page) {
+      setPage(page + 1);
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (meta && page > 1) {
+      setPage(page - 1);
+    }
+  };
 
   return (
     <DashboardLayout tipo="colaborador">
@@ -74,7 +107,7 @@ export default function Usuarios() {
         className="mb-4 p-2 rounded-md border border-gray-300 w-full md:w-1/2"
       />
 
-      {/* Modal */}
+      {/* Modal para criar/editar cliente */}
       {showForm && (
         <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex justify-center items-center z-50">
           <div className="relative bg-white rounded-xl shadow-xl max-w-lg w-full p-6 animate-fadeIn">
@@ -106,35 +139,61 @@ export default function Usuarios() {
           </thead>
           <tbody>
             {clientesFiltrados.map((c) => (
-                <tr key={c.id} className="border-b hover:bg-zinc-50">
+              <tr key={c.id} className="border-b hover:bg-zinc-50">
                 <td className="py-3 px-4">
-                    <span
+                  <span
                     className={`inline-block px-3 py-1 rounded-full text-white font-medium ${
-                        c.ativo ? 'bg-green-400' : 'bg-red-400'
+                      c.ativo ? 'bg-green-400' : 'bg-red-400'
                     }`}
-                    >
+                  >
                     {c.ativo ? 'Ativo' : 'Desativado'}
-                    </span>
+                  </span>
                 </td>
                 <td className="py-3 px-4 text-gray-800">{c.nome}</td>
                 <td className="py-3 px-4 text-gray-600">{c.email}</td>
                 <td className="py-3 px-4 text-gray-600">{c.login}</td>
                 <td className="py-3 px-4 flex gap-2">
-                    <button
+                  <button
                     className="text-blue-500 hover:text-blue-600"
                     onClick={() => handleEdit(c)}
-                    >
+                  >
                     <Pencil size={18} />
-                    </button>
-                    <button className="text-red-500 hover:text-red-600" onClick={() => alert('Em breve')}>
+                  </button>
+                  <button
+                    className="text-red-500 hover:text-red-600"
+                    onClick={() => alert('Em breve')}
+                  >
                     <Trash2 size={18} />
-                    </button>
+                  </button>
                 </td>
-                </tr>
+              </tr>
             ))}
-            </tbody>
+          </tbody>
         </table>
       </div>
+
+      {/* Componentes de paginação */}
+      {meta && (
+        <div className="flex items-center justify-center mt-4 gap-4">
+          <button
+            onClick={handlePrevPage}
+            disabled={page <= 1}
+            className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50"
+          >
+            Anterior
+          </button>
+          <span>
+            Página {meta.current_page} de {meta.last_page}
+          </span>
+          <button
+            onClick={handleNextPage}
+            disabled={page >= meta.last_page}
+            className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50"
+          >
+            Próxima
+          </button>
+        </div>
+      )}
     </DashboardLayout>
   );
 }

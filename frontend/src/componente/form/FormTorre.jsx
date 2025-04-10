@@ -8,24 +8,39 @@ export default function FormTorre({ initialData = {}, onSubmit, onCancel }) {
   const [localizacao, setLocalizacao] = useState(initialData?.localizacao || '');
   const [clienteId, setClienteId] = useState(initialData?.cliente_id || '');
   const [clientes, setClientes] = useState([]);
-  const [ativo, setAtivo] = useState(initialData?.ativo || true);
+  const [ativo, setAtivo] = useState(initialData?.ativo ?? true);
 
   // Carregar os clientes disponíveis
   useEffect(() => {
     const fetchClientes = async () => {
       try {
         const response = await axios.get(`${API}/clientes`);
-        setClientes(response.data);
+
+        // Verifica se o retorno é um array diretamente ou dentro de .data
+        const data = Array.isArray(response.data)
+          ? response.data
+          : Array.isArray(response.data.data)
+          ? response.data.data
+          : [];
+
+        setClientes(data);
       } catch (error) {
         console.error('Erro ao buscar clientes:', error);
+        setClientes([]);
       }
     };
+
     fetchClientes();
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ nome, localizacao, cliente_id: clienteId, ativo });
+    onSubmit({
+      nome,
+      localizacao,
+      cliente_id: parseInt(clienteId),
+      ativo,
+    });
   };
 
   return (
@@ -65,15 +80,15 @@ export default function FormTorre({ initialData = {}, onSubmit, onCancel }) {
           required
         >
           <option value="">Selecione um cliente</option>
-          {clientes.map((cliente) => (
-            <option key={cliente.id} value={cliente.id}>
-              {cliente.nome}
-            </option>
-          ))}
+          {Array.isArray(clientes) &&
+            clientes.map((cliente) => (
+              <option key={cliente.id} value={cliente.id}>
+                {cliente.nome}
+              </option>
+            ))}
         </select>
       </div>
 
-      {/* Campo Ativo/Desativado */}
       <div className="flex items-center gap-2">
         <input
           type="checkbox"

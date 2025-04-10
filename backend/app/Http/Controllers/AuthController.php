@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Cliente;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+use App\Models\Cliente;
+use App\Models\ColaboradorFake;
 
 class AuthController extends Controller
 {
@@ -26,7 +27,11 @@ class AuthController extends Controller
         $login = $request->login;
         $senha = $request->senha;
 
-        // 2. Verifica se é colaborador da empresa (tabela externa)
+        /*
+        |--------------------------------------------------------------------------
+        | 2. Autenticação do colaborador (banco externo)
+        |--------------------------------------------------------------------------
+        */
         try {
             $colaborador = DB::connection('external')->table('users')
                 ->where('Usuario', $login)
@@ -35,29 +40,41 @@ class AuthController extends Controller
                           ->orWhere('IoTComum', 1);
                 })
                 ->first();
-                if ($colaborador && Hash::check($senha, $colaborador->Senha)) {
-                    $fakeUser = new \App\Models\ColaboradorFake([
-                        'id' => $colaborador->id ?? 0,
-                        'name' => $colaborador->Nome ?? 'Colaborador',
-                    ]);
-                
-                    $token = $fakeUser->createToken('colaborador-token')->plainTextToken;
-                
-                    return response()->json([
-                        'status' => 'success',
-                        'tipo' => 'colaborador',
-                        'token' => $token,
-                        'nome' => $colaborador->Nome,
-                    ]);
-                }
+
+            if ($colaborador && Hash::check($senha, $colaborador->Senha)) {
+                $fakeUser = new ColaboradorFake([
+                    'id' => $colaborador->id,
+                    'name' => $colaborador->Nome,
+                ]);
+
+                // Evita que tente fazer INSERT
+                $fakeUser->exists = true;
+
+                // Criação do token
+                $token = $fakeUser->createToken('colaborador-token')->plainTextToken;
+
+                return response()->json([
+                    'status' => 'success',
+                    'tipo' => 'colaborador',
+                    'token' => $token,
+                    'nome' => $colaborador->Nome,
+                ]);
+            }
         } catch (\Exception $e) {
-            return response()->json(['error' => 'Erro ao consultar banco externo'], 500);
+            return response()->json([
+                'error' => 'Erro ao consultar banco externo',
+                'mensagem' => $e->getMessage(),
+            ], 500);
         }
 
-        // 3. Verifica se é cliente (banco local, sem hash por enquanto)
+        /*
+        |--------------------------------------------------------------------------
+        | 3. Autenticação do cliente (banco local)
+        |--------------------------------------------------------------------------
+        */
         $cliente = Cliente::where('login', $login)->first();
-        if ($cliente && Hash::check($senha, $cliente->senha)) {
 
+        if ($cliente && Hash::check($senha, $cliente->senha)) {
             $token = $cliente->createToken('cliente-token')->plainTextToken;
 
             return response()->json([
@@ -69,7 +86,13 @@ class AuthController extends Controller
             ]);
         }
 
-        return response()->json(['error' => 'Colaborador sem permissão ou senha inválida'], 401);
-
+        /*
+        |--------------------------------------------------------------------------
+        | 4. Falha geral de autenticação
+        |--------------------------------------------------------------------------
+        */
+        return response()->json([
+            'error' => 'Colaborador sem permissão ou senha inválida'
+        ], 401);
     }
 }

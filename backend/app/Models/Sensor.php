@@ -4,13 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Alarme;
 
 class Sensor extends Model
 {
     use HasFactory;
-
-    protected $fillable = ['appliance_id', 'tipo', 'unidade', 'identificador'];
     protected $table = 'sensores';
+    protected $fillable = ['appliance_id', 'tipo', 'unidade', 'identificador', 'ativo'];
+
+    protected $casts = [
+        'ativo' => 'boolean',
+    ];
 
     public function appliance()
     {
@@ -22,3 +26,4 @@ class Sensor extends Model
         return $this->hasMany(Alarme::class);
     }
 }
+

@@ -6,21 +6,25 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateAppliancesTable extends Migration
 {
-    public function up(): void
+    public function up()
     {
         Schema::create('appliances', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('torre_id')->constrained('torres')->onDelete('cascade');
+            $table->unsignedBigInteger('torre_id');
             $table->string('nome');
             $table->string('tipo');
-            $table->text('descricao')->nullable();
-            $table->string('rota')->nullable(); // nova coluna para acesso remoto
+            $table->string('descricao')->nullable();
+            $table->string('rota')->nullable();
+            $table->boolean('ativo')->default(true);
             $table->timestamps();
+
+            // Defina a foreign key se necessário:
+            $table->foreign('torre_id')->references('id')->on('torres');
         });
     }
 
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('appliances');
     }
-};
+}

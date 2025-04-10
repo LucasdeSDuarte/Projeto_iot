@@ -6,19 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateTorresTable extends Migration
 {
-    public function up(): void
+    public function up()
     {
         Schema::create('torres', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('cliente_id')->constrained('clientes')->onDelete('cascade');
+            $table->unsignedBigInteger('cliente_id');
             $table->string('nome');
-            $table->string('localizacao')->nullable();
+            $table->string('localizacao');
+            $table->boolean('ativo')->default(true);
             $table->timestamps();
+
+            // Defina a foreign key se necessário:
+            $table->foreign('cliente_id')->references('id')->on('clientes');
         });
     }
 
-    public function down(): void
+    public function down()
     {
         Schema::dropIfExists('torres');
     }
-};
+}

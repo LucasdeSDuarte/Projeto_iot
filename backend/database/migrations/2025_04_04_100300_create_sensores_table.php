@@ -14,6 +14,7 @@ class CreateSensoresTable extends Migration
             $table->string('tipo');
             $table->string('unidade')->nullable();
             $table->string('identificador')->nullable();
+            $table->boolean('ativo')->default(true);
             $table->timestamps();
         });
     }

@@ -3,6 +3,7 @@ import React from 'react';
 import { LogOut, Home, Bell, Activity, Users, Server, Cpu, AlertTriangle, Monitor } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
+
 export default function DashboardLayout({ children, tipo }) {
   const navigate = useNavigate();
   const location = useLocation();
@@ -20,7 +21,7 @@ export default function DashboardLayout({ children, tipo }) {
     { label: 'Torres', icon: Server, path: '/admin/torres' },
     { label: 'Dispositivos', icon: Cpu, path: '/admin/dispositivos' },
     { label: 'Sensores', icon: Activity, path: '/admin/sensores' },
-    { label: 'Alertas Pendentes', icon: AlertTriangle, path: '/admin/alertas' },
+    { label: 'Alertas ', icon: AlertTriangle, path: '/admin/alertas' },
     { label: 'Histórico', icon: Bell, path: '/admin/historico' },
   ] : [
     { label: 'Home', icon: Home, path: '/cliente/dashboard' },

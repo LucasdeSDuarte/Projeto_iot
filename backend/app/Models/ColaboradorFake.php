@@ -4,19 +4,24 @@ namespace App\Models;
 
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class ColaboradorFake extends Authenticatable
 {
-    use HasApiTokens, Notifiable;
-
+    use HasApiTokens;
+    protected $hidden = ['tokens'];
     protected $fillable = ['id', 'name'];
 
-    // Não vamos usar email e senha padrão
     public $timestamps = false;
+    public $incrementing = false;
+    protected $keyType = 'int';
+    protected $primaryKey = 'id';
 
-    public function getAuthIdentifierName()
+    protected $table = 'users';
+
+    public function __construct(array $attributes = [])
     {
-        return 'id';
+        parent::__construct($attributes);
+        $this->exists = true; // Impede INSERT
     }
 }
+

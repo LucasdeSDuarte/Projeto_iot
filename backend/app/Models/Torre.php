@@ -9,7 +9,10 @@ class Torre extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['cliente_id', 'nome', 'localizacao'];
+    protected $fillable = ['cliente_id', 'nome', 'localizacao', 'ativo'];
+    protected $casts = [
+        'ativo' => 'boolean',
+    ];
 
     public function cliente()
     {
@@ -21,3 +24,7 @@ class Torre extends Model
         return $this->hasMany(Appliance::class);
     }
 }
+
+
+
+
