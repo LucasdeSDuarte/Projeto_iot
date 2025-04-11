@@ -37,48 +37,48 @@ export default function FormSensor({ initialData = {}, onSubmit, onCancel }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 text-gray-800 dark:text-white">
       <h2 className="text-xl font-bold mb-4">
         {initialData?.id ? 'Editar Sensor' : 'Novo Sensor'}
       </h2>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Tipo</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Tipo</label>
         <input
           type="text"
           value={tipo}
           onChange={(e) => setTipo(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Unidade</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Unidade</label>
         <input
           type="text"
           value={unidade}
           onChange={(e) => setUnidade(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Identificador</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Identificador</label>
         <input
           type="text"
           value={identificador}
           onChange={(e) => setIdentificador(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Dispositivo (Appliance)</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Dispositivo (Appliance)</label>
         <select
           value={applianceId}
           onChange={(e) => setApplianceId(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         >
           <option value="">Selecione um dispositivo</option>
@@ -97,14 +97,14 @@ export default function FormSensor({ initialData = {}, onSubmit, onCancel }) {
           onChange={(e) => setAtivo(e.target.checked)}
           className="h-4 w-4 rounded border-gray-300 text-green-500 focus:ring-green-500"
         />
-        <label className="text-sm text-gray-700">Ativo</label>
+        <label className="text-sm text-gray-700 dark:text-gray-300">Ativo</label>
       </div>
 
       <div className="flex justify-end gap-2">
         <button
           type="button"
           onClick={onCancel}
-          className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 text-sm"
+          className="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md hover:bg-gray-400 dark:hover:bg-gray-600 text-sm"
         >
           Cancelar
         </button>

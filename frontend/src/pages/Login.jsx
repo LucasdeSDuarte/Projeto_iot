@@ -14,6 +14,7 @@ export default function Login() {
   const [login, setLogin] = useState('');
   const [senha, setSenha] = useState('');
   const [erro, setErro] = useState(null);
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,30 +32,30 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setErro(null);
+
+    if (!login || !senha) {
+      setErro('Preencha login e senha.');
+      return;
+    }
+
     try {
-      const response = await axios.post(`${API}/login`, {
-        login,
-        senha,
-      });
-  
+      setLoading(true);
+      const response = await axios.post(`${API}/login`, { login, senha });
+
       const { token, tipo } = response.data;
-  
       localStorage.setItem('token', token);
       localStorage.setItem('user', JSON.stringify({ tipo }));
-  
-      setAuthToken(token); // <-- Aqui sim é o momento certo
-  
-      if (tipo === 'cliente') {
-        navigate('/cliente/dashboard');
-      } else {
-        navigate('/admin/dashboard');
-      }
+      setAuthToken(token);
+
+      navigate(tipo === 'cliente' ? '/cliente/dashboard' : '/admin/dashboard');
     } catch (err) {
       console.error(err);
-      setErro('Login inválido ou erro na autenticação.');
+      const message = err.response?.data?.message || 'Login inválido ou erro na autenticação.';
+      setErro(message);
+    } finally {
+      setLoading(false);
     }
   };
-  
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-gray-900 to-black">
@@ -76,6 +77,7 @@ export default function Login() {
               </label>
               <input
                 id="login"
+                autoFocus
                 type="text"
                 value={login}
                 onChange={(e) => setLogin(e.target.value)}
@@ -100,6 +102,7 @@ export default function Login() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
+                  aria-label={showPassword ? 'Ocultar senha' : 'Mostrar senha'}
                   className="absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-green-400"
                 >
                   {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
@@ -115,9 +118,10 @@ export default function Login() {
 
             <button
               type="submit"
-              className="w-full py-2 mt-2 bg-green-500 text-black font-semibold rounded-md hover:bg-green-400 transition duration-300"
+              disabled={loading}
+              className="w-full py-2 mt-2 bg-green-500 text-black font-semibold rounded-md hover:bg-green-400 transition duration-300 disabled:opacity-60"
             >
-              Entrar
+              {loading ? 'Entrando...' : 'Entrar'}
             </button>
           </form>
 

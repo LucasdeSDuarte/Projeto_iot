@@ -10,7 +10,7 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
   const [ativo, setAtivo] = useState(initialData?.ativo === 1 || initialData?.ativo === true);
 
   useEffect(() => {
-    setSenha(''); // limpa a senha no modo edição
+    setSenha('');
   }, [initialData]);
 
   const handleSubmit = (e) => {
@@ -31,49 +31,49 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 text-gray-800 dark:text-white">
       <h2 className="text-xl font-bold mb-4">
         {initialData?.id ? 'Editar Cliente' : 'Novo Cliente'}
       </h2>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Nome</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Nome</label>
         <input
           type="text"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Email</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Login</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Login</label>
         <input
           type="text"
           value={login}
           onChange={(e) => setLogin(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       {/* Senha */}
       <div>
-        <label className="block text-sm font-medium text-gray-700">Senha</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Senha</label>
         {initialData?.id && (
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-gray-500 dark:text-gray-400">
             Deixe em branco para manter a senha atual.
           </div>
         )}
@@ -82,7 +82,7 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
             type={showPassword ? 'text' : 'password'}
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
-            className="w-full p-2 border rounded-md pr-10"
+            className="w-full p-2 pr-10 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
             placeholder={initialData?.id ? 'Nova senha (opcional)' : 'Digite a senha'}
             required={!initialData?.id && senha === ''}
           />
@@ -104,14 +104,14 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
           onChange={(e) => setAtivo(e.target.checked)}
           className="h-4 w-4 rounded border-gray-300 text-green-500 focus:ring-green-500"
         />
-        <label className="text-sm text-gray-700">Ativo</label>
+        <label className="text-sm text-gray-700 dark:text-gray-300">Ativo</label>
       </div>
 
       <div className="flex justify-end gap-2">
         <button
           type="button"
           onClick={onCancel}
-          className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 text-sm"
+          className="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md hover:bg-gray-400 dark:hover:bg-gray-600 text-sm"
         >
           Cancelar
         </button>

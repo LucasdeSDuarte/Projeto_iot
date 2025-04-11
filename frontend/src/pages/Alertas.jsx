@@ -57,7 +57,7 @@ export default function Alertas() {
   return (
     <DashboardLayout tipo="colaborador">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold text-zinc-800">Alertas</h1>
+        <h1 className="text-2xl font-bold text-zinc-800 dark:text-white">Alertas</h1>
         <button
           className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
           onClick={handleCreate}
@@ -71,12 +71,12 @@ export default function Alertas() {
         placeholder="Buscar por descrição"
         value={filtro}
         onChange={(e) => setFiltro(e.target.value)}
-        className="mb-4 p-2 rounded-md border border-gray-300 w-full md:w-1/2"
+        className="mb-4 p-2 rounded-md border border-gray-300 w-full md:w-1/2 dark:bg-zinc-800 dark:text-white dark:border-gray-600"
       />
 
       {showForm && (
         <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex justify-center items-center z-50">
-          <div className="relative bg-white rounded-xl shadow-xl max-w-lg w-full p-6 animate-fadeIn">
+          <div className="relative bg-white dark:bg-zinc-900 text-black dark:text-white rounded-xl shadow-xl max-w-lg w-full p-6 animate-fadeIn">
             <button
               onClick={() => setShowForm(false)}
               className="absolute top-3 right-3 text-gray-400 hover:text-gray-600"
@@ -93,25 +93,23 @@ export default function Alertas() {
       )}
 
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white rounded-xl shadow-md">
-          <thead className="bg-zinc-100 border-b">
+        <table className="min-w-full bg-white dark:bg-zinc-900 rounded-xl shadow-md">
+          <thead className="bg-zinc-100 dark:bg-zinc-800 border-b border-gray-200 dark:border-zinc-700">
             <tr>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600">Descrição</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600">Valor Alarme</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600">Email Destino</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600">Dispositivo</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600">Ações</th>
+              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Descrição</th>
+              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Valor Alarme</th>
+              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Email Destino</th>
+              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Dispositivo</th>
+              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
             </tr>
           </thead>
           <tbody>
             {alarmesFiltrados.map((a) => (
-              <tr key={a.id} className="border-b hover:bg-zinc-50">
-                <td className="py-3 px-4">{a.descricao}</td>
-                <td className="py-3 px-4">{a.valor_alarme}</td>
-                <td className="py-3 px-4 text-sm">{a.email}</td>
-                <td className="py-3 px-4 text-sm text-gray-600">
-                  {a.sensor?.appliance?.nome || '---'}
-                </td>
+              <tr key={a.id} className="border-b hover:bg-zinc-50 dark:hover:bg-zinc-800 border-gray-200 dark:border-zinc-700">
+                <td className="py-3 px-4 text-gray-700 dark:text-gray-200">{a.descricao}</td>
+                <td className="py-3 px-4 text-gray-700 dark:text-gray-200">{a.valor_alarme}</td>
+                <td className="py-3 px-4 text-sm text-gray-700 dark:text-gray-200">{a.email}</td>
+                <td className="py-3 px-4 text-sm text-gray-600 dark:text-gray-300">{a.sensor?.appliance?.nome || '---'}</td>
                 <td className="py-3 px-4 flex gap-2">
                   <button onClick={() => handleEdit(a)} className="text-blue-500 hover:text-blue-600">
                     <Pencil size={18} />
@@ -131,15 +129,17 @@ export default function Alertas() {
           <button
             onClick={() => setPage(page - 1)}
             disabled={page <= 1}
-            className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-zinc-700 text-black dark:text-white rounded-md hover:bg-gray-400 disabled:opacity-50"
           >
             Anterior
           </button>
-          <span>Página {meta.current_page} de {meta.last_page}</span>
+          <span className="text-gray-700 dark:text-gray-200">
+            Página {meta.current_page} de {meta.last_page}
+          </span>
           <button
             onClick={() => setPage(page + 1)}
             disabled={page >= meta.last_page}
-            className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-zinc-700 text-black dark:text-white rounded-md hover:bg-gray-400 disabled:opacity-50"
           >
             Próxima
           </button>

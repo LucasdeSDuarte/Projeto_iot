@@ -12,6 +12,7 @@ class CreateTorresTable extends Migration
             $table->id();
             $table->unsignedBigInteger('cliente_id');
             $table->string('nome');
+            $table->string('projeto')->nullable();
             $table->string('localizacao');
             $table->boolean('ativo')->default(true);
             $table->timestamps();

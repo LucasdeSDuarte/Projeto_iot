@@ -23,7 +23,6 @@ class Cliente extends Authenticatable
 
     protected $hidden = [
         'senha',
-        'torres'
     ];
 
     public function torres()

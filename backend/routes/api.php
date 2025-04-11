@@ -10,6 +10,9 @@ use App\Http\Controllers\ApplianceController;
 use App\Http\Controllers\SensorController;
 use App\Http\Controllers\AlarmeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TopologiaController;
+use App\Http\Controllers\SAPProjectController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +35,15 @@ Route::get('/torres', [TorreController::class, 'index']);
 Route::post('/torres', [TorreController::class, 'store']);
 Route::put('/torres/{torre}', [TorreController::class, 'update']);
 Route::delete('/torres/{torre}', [TorreController::class, 'destroy']);
+Route::get('/projetos', function () {
+    $projetos = \App\Models\Torre::whereNotNull('projeto')
+        ->distinct()
+        ->orderBy('projeto')
+        ->pluck('projeto');
+
+    return response()->json($projetos);
+});
+
 
 // Rotas de Appliances
 Route::get('/appliances', [ApplianceController::class, 'index']);
@@ -50,8 +62,19 @@ Route::get('/alarmes', [AlarmeController::class, 'index']);
 Route::post('/alarmes', [AlarmeController::class, 'store']);
 Route::put('/alarmes/{alarme}', [AlarmeController::class, 'update']);
 Route::delete('/alarmes/{alarme}', [AlarmeController::class, 'destroy']);
+
+
 // Rotas do Dashboard Colaborador
 Route::get('/dashboard/indicadores', [DashboardController::class, 'indicadores']);
+
+// Rotas de topologia
+
+Route::get('/topologia', [TopologiaController::class, 'index']);
+
+// Rotas de Autenticação SAP E PROJETOS SAP
+Route::get('/sap/projects', [SAPProjectController::class, 'listarProjetos']);
+
+
 
 /*
 |--------------------------------------------------------------------------

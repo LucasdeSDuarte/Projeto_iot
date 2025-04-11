@@ -55,22 +55,10 @@ export default function Dispositivos() {
     (d.tipo && d.tipo.toLowerCase().includes(filtro.toLowerCase()))
   );
 
-  const handleNextPage = () => {
-    if (meta && page < meta.last_page) {
-      setPage(page + 1);
-    }
-  };
-
-  const handlePrevPage = () => {
-    if (meta && page > 1) {
-      setPage(page - 1);
-    }
-  };
-
   return (
     <DashboardLayout tipo="colaborador">
       <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-zinc-800">Dispositivos</h1>
+        <h1 className="text-2xl font-bold text-zinc-800 dark:text-white">Dispositivos</h1>
         <button
           onClick={handleCreate}
           className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
@@ -84,15 +72,15 @@ export default function Dispositivos() {
         placeholder="Buscar por nome ou tipo"
         value={filtro}
         onChange={(e) => setFiltro(e.target.value)}
-        className="mb-4 p-2 rounded-md border border-gray-300 w-full md:w-1/2"
+        className="mb-4 p-2 rounded-md border border-gray-300 w-full md:w-1/2 dark:bg-zinc-800 dark:text-white dark:border-zinc-600"
       />
 
       {showForm && (
         <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex justify-center items-center z-50">
-          <div className="relative bg-white rounded-xl shadow-xl max-w-lg w-full p-6 animate-fadeIn">
+          <div className="relative bg-white dark:bg-zinc-900 dark:text-white rounded-xl shadow-xl max-w-lg w-full p-6 animate-fadeIn">
             <button
               onClick={() => setShowForm(false)}
-              className="absolute top-3 right-3 text-gray-400 hover:text-gray-600"
+              className="absolute top-3 right-3 text-gray-400 hover:text-gray-200"
             >
               <X size={20} />
             </button>
@@ -106,68 +94,60 @@ export default function Dispositivos() {
       )}
 
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white rounded-xl shadow-md">
-        <thead className="bg-zinc-100 border-b">
-          <tr>
-            <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600">Nome</th>
-            <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600">Tipo</th>
-            <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600">Torre</th>
-            <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600">Rota</th>
-            <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600">Ações</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {dispositivosFiltrados.map((d) => (
-            <tr key={d.id} className="border-b hover:bg-zinc-50">
-              <td className="py-3 px-4">{d.nome}</td>
-              <td className="py-3 px-4 text-gray-600">{d.tipo}</td>
-              <td className="py-3 px-4 text-gray-600">{d.torre?.nome}</td>
-              <td className="py-3 px-4 text-blue-600">
-                {d.rota ? (
-                  <a href={d.rota} target="_blank" rel="noopener noreferrer" className="hover:underline">
-                    {d.rota}
-                  </a>
-                ) : (
-                  <span className="text-gray-400 italic">Não definida</span>
-                )}
-              </td>
-              <td className="py-3 px-4 flex gap-2">
-                <button
-                  className="text-blue-500 hover:text-blue-600"
-                  onClick={() => handleEdit(d)}
-                >
-                  <Pencil size={18} />
-                </button>
-                <button
-                  className="text-red-500 hover:text-red-600"
-                  onClick={() => alert('Em breve')}
-                >
-                  <Trash2 size={18} />
-                </button>
-              </td>
+        <table className="min-w-full bg-white dark:bg-zinc-800 rounded-xl shadow-md">
+          <thead className="bg-zinc-100 dark:bg-zinc-700 border-b">
+            <tr>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Cliente / Nome</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Tipo</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Torre</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Rota</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
             </tr>
-          ))}
-        </tbody>
+          </thead>
+
+          <tbody>
+            {dispositivosFiltrados.map((d) => (
+              <tr key={d.id} className="border-b hover:bg-zinc-50 dark:hover:bg-zinc-700">
+                <td className="py-3 px-4 text-zinc-800 dark:text-white">{d.nome}</td>
+                <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{d.tipo}</td>
+                <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{d.torre?.nome}</td>
+                <td className="py-3 px-4 text-blue-600 dark:text-blue-400">
+                  {d.rota ? (
+                    <a href={d.rota} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      {d.rota}
+                    </a>
+                  ) : (
+                    <span className="text-gray-400 italic dark:text-gray-500">Não definida</span>
+                  )}
+                </td>
+                <td className="py-3 px-4 flex gap-2">
+                  <button className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400" onClick={() => handleEdit(d)}>
+                    <Pencil size={18} />
+                  </button>
+                  <button className="text-red-500 hover:text-red-600 dark:hover:text-red-400" onClick={() => alert('Em breve')}>
+                    <Trash2 size={18} />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
 
       {meta && (
         <div className="flex items-center justify-center mt-4 gap-4">
           <button
-            onClick={handlePrevPage}
+            onClick={() => setPage(page - 1)}
             disabled={page <= 1}
-            className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-zinc-700 rounded-md hover:bg-gray-400 dark:hover:bg-zinc-600 disabled:opacity-50"
           >
             Anterior
           </button>
-          <span>
-            Página {meta.current_page} de {meta.last_page}
-          </span>
+          <span className="dark:text-white">Página {meta.current_page} de {meta.last_page}</span>
           <button
-            onClick={handleNextPage}
+            onClick={() => setPage(page + 1)}
             disabled={page >= meta.last_page}
-            className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-zinc-700 rounded-md hover:bg-gray-400 dark:hover:bg-zinc-600 disabled:opacity-50"
           >
             Próxima
           </button>

@@ -30,7 +30,7 @@ return [
     */
 
     'connections' => [
-        
+
         'external' => [
             'driver' => 'mysql',
             'host' => env('DB_EXTERNAL_HOST', '10.0.0.183'),
@@ -45,6 +45,21 @@ return [
             'strict' => true,
             'engine' => null,
         ],
+        'requisicao' => [
+            'driver' => 'mysql',
+            'host' => env('DB_REQUISICAO_HOST', '10.0.0.183'),
+            'port' => env('DB_REQUISICAO_PORT', '3306'),
+            'database' => env('DB_REQUISICAO_DATABASE', 'Requisicao'),
+            'username' => env('DB_REQUISICAO_USERNAME', 'denunciaDB'),
+            'password' => env('DB_REQUISICAO_PASSWORD', '18122001'),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+        ],
+
 
         'sqlite' => [
             'driver' => 'sqlite',

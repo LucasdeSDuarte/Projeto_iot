@@ -19,7 +19,7 @@ class Appliance extends Model
         return $this->belongsTo(Torre::class);
     }
 
-    public function sensors()
+    public function sensores()
     {
         return $this->hasMany(Sensor::class);
     }

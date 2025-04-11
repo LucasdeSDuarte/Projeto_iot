@@ -1,19 +1,22 @@
-// src/components/DashboardLayout.jsx
 import React from 'react';
 import { LogOut, Home, Bell, Activity, Users, Server, Cpu, AlertTriangle, Monitor } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { Moon, Sun } from 'lucide-react';
+import { useContext } from 'react';
+import { ThemeContext } from '../context/ThemeContext';
+import ToggleThemeButton from '../componente/botao/ToggleThemeButton';
 
 
 export default function DashboardLayout({ children, tipo }) {
   const navigate = useNavigate();
   const location = useLocation();
+  const { theme, setTheme } = useContext(ThemeContext);
 
   const handleLogout = () => {
     localStorage.clear();
     navigate('/');
   };
 
-  // Menus por tipo de usuário
   const menus = tipo === 'colaborador' ? [
     { label: 'Home', icon: Home, path: '/admin/dashboard' },
     { label: 'Monitoramento Geral', icon: Monitor, path: '/admin/monitoramento' },
@@ -23,6 +26,7 @@ export default function DashboardLayout({ children, tipo }) {
     { label: 'Sensores', icon: Activity, path: '/admin/sensores' },
     { label: 'Alertas ', icon: AlertTriangle, path: '/admin/alertas' },
     { label: 'Histórico', icon: Bell, path: '/admin/historico' },
+    { label: 'Topologia', icon: Bell, path: '/admin/topologia' },
   ] : [
     { label: 'Home', icon: Home, path: '/cliente/dashboard' },
     { label: 'Meu Monitoramento', icon: Monitor, path: '/cliente/monitoramento' },
@@ -30,7 +34,7 @@ export default function DashboardLayout({ children, tipo }) {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gray-100 text-gray-800">
+    <div className="flex min-h-screen bg-white text-gray-800 dark:bg-zinc-900 dark:text-white">
       {/* Sidebar */}
       <aside className="w-64 bg-zinc-900 text-white hidden md:block relative">
         <div className="p-6 text-2xl font-bold border-b border-zinc-700">
@@ -52,6 +56,9 @@ export default function DashboardLayout({ children, tipo }) {
             );
           })}
         </nav>
+        <div className="absolute bottom-16 w-full px-6">
+          <ToggleThemeButton />
+        </div>
         <div className="absolute bottom-4 w-full px-6">
           <button
             onClick={handleLogout}
@@ -63,7 +70,7 @@ export default function DashboardLayout({ children, tipo }) {
       </aside>
 
       {/* Main content */}
-      <main className="flex-1 p-6 overflow-y-auto">
+      <main className="flex-1 p-6 overflow-y-auto bg-white text-gray-800 dark:bg-zinc-900 dark:text-white">
         {children}
       </main>
     </div>

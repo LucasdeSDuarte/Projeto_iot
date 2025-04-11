@@ -13,6 +13,8 @@ import AdminMonitoramento from './pages/AdminMonitoramento';
 import ClienteMonitoramento from './pages/ClienteMonitoramento';
 import HistoricoColaborador from './pages/HistoricoColaborador';
 import HistoricoCliente from './pages/HistoricoCliente';
+import Topologia from './pages/Topologia';
+
 
 export default function App() {
   return (
@@ -110,6 +112,15 @@ export default function App() {
           </PrivateRoute>
         }
       />
+      <Route
+        path="/admin/topologia"
+        element={
+          <PrivateRoute tipo="colaborador">
+            <Topologia />
+          </PrivateRoute>
+        }
+      />
     </Routes>
+    
   );
 }

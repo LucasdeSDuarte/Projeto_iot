@@ -26,18 +26,23 @@ export default function ClienteMonitoramento() {
 
   return (
     <DashboardLayout tipo="cliente">
-      <h1 className="text-2xl font-bold mb-6">Monitoramento em Tempo Real</h1>
+      <h1 className="text-2xl font-bold mb-6 text-zinc-800 dark:text-white">
+        Monitoramento em Tempo Real
+      </h1>
 
       {loading ? (
-        <p className="text-gray-500">Carregando sensores...</p>
+        <p className="text-gray-500 dark:text-gray-300">Carregando sensores...</p>
       ) : erro ? (
-        <p className="text-red-500">Erro ao carregar sensores. Tente novamente mais tarde.</p>
+        <p className="text-red-500 dark:text-red-400">Erro ao carregar sensores. Tente novamente mais tarde.</p>
       ) : sensores.length === 0 ? (
-        <p className="text-gray-500">Nenhum sensor encontrado para sua conta.</p>
+        <p className="text-gray-500 dark:text-gray-300">Nenhum sensor encontrado para sua conta.</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {sensores.map((sensor) => (
-            <div key={sensor.id} className="bg-white p-4 rounded shadow">
+            <div
+              key={sensor.id}
+              className="bg-white dark:bg-zinc-800 text-gray-800 dark:text-white p-4 rounded shadow"
+            >
               <h2 className="text-lg font-semibold mb-2 capitalize">{sensor.tipo}</h2>
               <p><strong>Identificador:</strong> {sensor.identificador}</p>
               <p><strong>Unidade:</strong> {sensor.unidade}</p>

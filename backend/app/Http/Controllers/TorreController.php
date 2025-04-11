@@ -10,21 +10,18 @@ use App\Http\Resources\TorreResource;
 
 class TorreController extends Controller
 {
-    /**
-     * Listar todas as torres com paginação.
-     */
     public function index(Request $request)
     {
-        // Define quantos itens por página; padrão: 10
         $perPage = $request->query('per_page', 10);
+        $projeto = $request->query('projeto');
 
-        // Importante: Verifique se o relacionamento de dispositivos
-        // está corretamente definido. No seu model Torre, o método
-        // é "appliances()" e, no model Sensor, o método é "alarmess()".
-        // Assim, para carregar o relacionamento dos dispositivos e
-        // sensores com seus alarmesess, o carregamento deve ser:
-        // 'appliances.sensors.alarmess'
-        $torres = Torre::with(['cliente', 'appliances.sensors.alarmes'])->paginate($perPage);
+        $query = Torre::with(['cliente', 'appliances.sensores.alarmes']);
+
+        if ($projeto) {
+            $query->where('projeto', 'like', '%' . $projeto . '%');
+        }
+
+        $torres = $query->paginate($perPage);
 
         return response()->json([
             'status' => 'success',
@@ -42,9 +39,6 @@ class TorreController extends Controller
         ]);
     }
 
-    /**
-     * Cadastrar uma nova torre.
-     */
     public function store(Request $request)
     {
         try {
@@ -53,22 +47,15 @@ class TorreController extends Controller
             $validated = $request->validate([
                 'cliente_id'  => 'required|exists:clientes,id',
                 'nome'        => 'required|string|max:255',
+                'projeto'     => 'nullable|string|max:255',
                 'localizacao' => 'required|string|max:255',
-                'ativo'       => 'boolean',
+                'ativo'       => 'nullable|boolean',
             ]);
 
-            // Se não informado, define 'ativo' como true
-            if (!isset($validated['ativo'])) {
-                $validated['ativo'] = true;
-            }
+            $validated['ativo'] = $request->boolean('ativo', true); // default true
 
             $torre = Torre::create($validated);
-
-            // Carrega os relacionamentos para incluir na resposta.
-            // Atenção: Certifique-se de que a relação para alarmesess esteja
-            // definida de forma consistente. Se o seu model Sensor usa "alarmess",
-            // o correto é "appliances.sensors.alarmess" (no plural).
-            $torre->load(['cliente', 'appliances.sensors.alarmes']);
+            $torre->load(['cliente', 'appliances.sensores.alarmes']);
 
             DB::commit();
 
@@ -88,9 +75,6 @@ class TorreController extends Controller
         }
     }
 
-    /**
-     * Atualizar uma torre existente.
-     */
     public function update(Request $request, Torre $torre)
     {
         try {
@@ -99,16 +83,17 @@ class TorreController extends Controller
             $validated = $request->validate([
                 'cliente_id'  => 'required|exists:clientes,id',
                 'nome'        => 'required|string|max:255',
+                'projeto'     => 'nullable|string|max:255',
                 'localizacao' => 'required|string|max:255',
-                'ativo'       => 'boolean',
+                'ativo'       => 'nullable|boolean',
             ]);
 
+            $validated['ativo'] = $request->boolean('ativo', true); // default true
+
             $torre->update($validated);
+            $torre->load(['cliente', 'appliances.sensores.alarmes']);
 
             DB::commit();
-
-            // Recarrega os relacionamentos atualizados
-            $torre->load(['cliente', 'appliances.sensors.alarmes']);
 
             return response()->json([
                 'status'  => 'success',
@@ -126,16 +111,9 @@ class TorreController extends Controller
         }
     }
 
-    /**
-     * Excluir uma torre.
-     *
-     * Se preferir apenas desabilitar, você pode atualizar o campo "ativo" em vez de excluir.
-     */
     public function destroy(Torre $torre)
     {
         try {
-            // Se quiser apenas desabilitar, comente a linha abaixo e use:
-            // $torre->update(['ativo' => false]);
             $torre->delete();
 
             return response()->json([

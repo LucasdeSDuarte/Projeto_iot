@@ -1,4 +1,4 @@
-import React, {  useState } from 'react';
+import React, { useState } from 'react';
 import DashboardLayout from '../componente/DashboardLayout';
 
 const MOCK_SENSORES = [
@@ -68,14 +68,14 @@ export default function AdminMonitoramento() {
 
   return (
     <DashboardLayout tipo="colaborador">
-      <h1 className="text-2xl font-bold mb-6">Monitoramento Geral dos Sensores</h1>
+      <h1 className="text-2xl font-bold mb-6 text-zinc-800 dark:text-white">Monitoramento Geral dos Sensores</h1>
 
       <div className="mb-6 max-w-md">
-        <label className="block mb-2 text-sm font-medium">Selecione um Cliente:</label>
+        <label className="block mb-2 text-sm font-medium text-zinc-700 dark:text-zinc-200">Selecione um Cliente:</label>
         <select
           value={clienteSelecionado}
           onChange={(e) => setClienteSelecionado(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded bg-white dark:bg-zinc-800 dark:text-white dark:border-zinc-600"
         >
           <option value="">-- Selecione --</option>
           {clientesUnicos.map((cliente, idx) => (
@@ -87,7 +87,7 @@ export default function AdminMonitoramento() {
       {clienteSelecionado ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {sensoresFiltrados.map((sensor) => (
-            <div key={sensor.id} className="bg-white p-4 rounded shadow">
+            <div key={sensor.id} className="bg-white dark:bg-zinc-800 text-zinc-800 dark:text-white p-4 rounded shadow">
               <h2 className="text-lg font-semibold mb-2">{sensor.tipo} - {sensor.cliente_nome}</h2>
               <p><strong>Torre:</strong> {sensor.torre_nome}</p>
               <p><strong>Identificador:</strong> {sensor.identificador}</p>
@@ -97,7 +97,7 @@ export default function AdminMonitoramento() {
           ))}
         </div>
       ) : (
-        <p className="text-gray-500 text-center mt-6">Selecione um cliente para visualizar os sensores.</p>
+        <p className="text-gray-500 dark:text-gray-300 text-center mt-6">Selecione um cliente para visualizar os sensores.</p>
       )}
     </DashboardLayout>
   );

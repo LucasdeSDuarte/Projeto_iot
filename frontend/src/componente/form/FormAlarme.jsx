@@ -37,51 +37,51 @@ export default function FormAlarme({ initialData = {}, onSubmit, onCancel }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 text-gray-800 dark:text-white">
       <h2 className="text-xl font-bold mb-4">
         {initialData?.id ? 'Editar Alerta' : 'Novo Alerta'}
       </h2>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Descrição</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Descrição</label>
         <input
           type="text"
           value={descricao}
           onChange={(e) => setDescricao(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Valor do Alarme</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Valor do Alarme</label>
         <input
           type="number"
           step="0.01"
           value={valorAlarme}
           onChange={(e) => setValorAlarme(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">E-mail de Destino</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">E-mail de Destino</label>
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-gray-700">Sensor Vinculado</label>
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Sensor Vinculado</label>
         <select
           value={sensorId}
           onChange={(e) => setSensorId(e.target.value)}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
           required
         >
           <option value="">Selecione um sensor</option>
@@ -100,14 +100,14 @@ export default function FormAlarme({ initialData = {}, onSubmit, onCancel }) {
           onChange={(e) => setAtivo(e.target.checked)}
           className="h-4 w-4 rounded border-gray-300 text-green-500 focus:ring-green-500"
         />
-        <label className="text-sm text-gray-700">Ativo</label>
+        <label className="text-sm text-gray-700 dark:text-gray-300">Ativo</label>
       </div>
 
-      <div className="flex justify-end gap-2">
+      <div className="flex justify-end gap-2 mt-6">
         <button
           type="button"
           onClick={onCancel}
-          className="px-4 py-2 bg-gray-300 rounded-md hover:bg-gray-400 text-sm"
+          className="px-4 py-2 bg-gray-300 dark:bg-gray-700 text-black dark:text-white rounded-md hover:bg-gray-400 dark:hover:bg-gray-600 text-sm"
         >
           Cancelar
         </button>
