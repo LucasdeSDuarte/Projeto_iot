@@ -92,12 +92,14 @@ export default function Usuarios() {
         placeholder="Buscar por nome ou email"
         value={filtro}
         onChange={(e) => setFiltro(e.target.value)}
-        className="mb-4 p-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-zinc-800 text-gray-800 dark:text-white w-full md:w-1/2"
+        className="mb-4 p-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-zinc-800 
+                   text-gray-800 dark:text-white w-full md:w-1/2"
       />
 
       {showForm && (
         <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex justify-center items-center z-50">
-          <div className="relative bg-white dark:bg-zinc-900 text-black dark:text-white rounded-xl shadow-xl max-w-lg w-full p-6 animate-fadeIn">
+          <div className="relative bg-white dark:bg-zinc-900 text-black dark:text-white rounded-xl shadow-xl 
+                          max-w-lg w-full p-6 animate-fadeIn">
             <button
               onClick={() => setShowForm(false)}
               className="absolute top-3 right-3 text-gray-400 hover:text-gray-600"
@@ -117,16 +119,29 @@ export default function Usuarios() {
         <table className="min-w-full bg-white dark:bg-zinc-800 rounded-xl shadow-md">
           <thead className="bg-zinc-100 dark:bg-zinc-700 border-b dark:border-zinc-600">
             <tr>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Status</th>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Nome / Empresa</th>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Email</th>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Login</th>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">
+                Status
+              </th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">
+                Nome / Empresa
+              </th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">
+                Email
+              </th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">
+                Login
+              </th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">
+                Ações
+              </th>
             </tr>
           </thead>
           <tbody>
             {clientesFiltrados.map((c) => (
-              <tr key={c.id} className="border-b dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition">
+              <tr
+                key={c.id}
+                className="border-b dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition"
+              >
                 <td className="py-3 px-4">
                   <span
                     className={`inline-block px-3 py-1 rounded-full text-white font-medium ${
@@ -171,7 +186,8 @@ export default function Usuarios() {
           <button
             onClick={handlePrevPage}
             disabled={page <= 1}
-            className="px-4 py-2 bg-gray-300 dark:bg-gray-600 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-gray-600 rounded-md hover:bg-gray-400 
+                       dark:hover:bg-gray-500 disabled:opacity-50"
           >
             Anterior
           </button>
@@ -181,7 +197,8 @@ export default function Usuarios() {
           <button
             onClick={handleNextPage}
             disabled={page >= meta.last_page}
-            className="px-4 py-2 bg-gray-300 dark:bg-gray-600 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-gray-600 rounded-md hover:bg-gray-400 
+                       dark:hover:bg-gray-500 disabled:opacity-50"
           >
             Próxima
           </button>

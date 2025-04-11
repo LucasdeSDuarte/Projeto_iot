@@ -4,16 +4,18 @@ import { FiSearch } from 'react-icons/fi';
 
 const API = import.meta.env.VITE_API_URL; // Ex.: "http://10.0.0.183:8055/api"
 
-export default function ProjetoSAPDropdown({ value, onChange }) {
+export default function ClientSAPDropdown({ value, onChange }) {
   const [inputValue, setInputValue] = useState('');
   const [options, setOptions] = useState([]);
   const [showOptions, setShowOptions] = useState(false);
 
+  // Caso o valor seja fornecido como objeto com a propriedade "nome", exibe o nome selecionado.
+  // Se for uma string, não temos informação do nome, então pode deixar vazio ou manter como está.
   useEffect(() => {
-    if (typeof value === 'string') {
-      setInputValue(value);
-    } else if (value?.label) {
-      setInputValue(value.label);
+    if (value && typeof value === 'object' && value.nome) {
+      setInputValue(value.nome);
+    } else if (typeof value === 'string') {
+      setInputValue(''); // caso receba apenas o PN sem o nome, deixa o input vazio (ou ajuste conforme necessário)
     }
   }, [value]);
 
@@ -23,42 +25,43 @@ export default function ProjetoSAPDropdown({ value, onChange }) {
       return;
     }
 
-    const buscarProjetos = async () => {
+    const buscarClientes = async () => {
       try {
-        const response = await axios.get(`${API}/sap/projects`, {
+        const response = await axios.get(`${API}/sap/clients`, {
           params: { termo: inputValue }
         });
-        console.log('Retorno da API /sap/projects:', response.data);
+        console.log('Retorno da API /sap/clients:', response.data);
 
         const data = Array.isArray(response.data) ? response.data : [];
-        // Mapeia para exibir somente o código
-        const formatado = data.map((p) => ({
-          label: p.codigo,
-          value: p.codigo,
+
+        // Mapeia os dados para que o "label" seja o nome do cliente e o "value" seja o PN.
+        const formatado = data.map((c) => ({
+          label: c.nome, // exibe somente o nome
+          value: c.pn,   // guarda o PN
         }));
 
         setOptions(formatado);
         setShowOptions(true);
       } catch (err) {
-        console.error('Erro ao buscar projetos SAP:', err);
+        console.error('Erro ao buscar clientes SAP:', err);
         setOptions([]);
       }
     };
 
-    const delay = setTimeout(buscarProjetos, 400); // debounce de 400ms
+    const delay = setTimeout(buscarClientes, 400); // debounce de 400ms
     return () => clearTimeout(delay);
   }, [inputValue]);
 
   const handleSelect = (option) => {
-    setInputValue(option.label);
-    onChange(option.value); // envia apenas o código selecionado
+    setInputValue(option.label); // exibe o nome selecionado
+    onChange(option.value);      // repassa o PN para o componente pai
     setShowOptions(false);
   };
 
   return (
     <div className="w-full relative">
       <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-        Projeto SAP
+        Cliente SAP (PN)
       </label>
       <div className="relative">
         <div className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
@@ -73,7 +76,7 @@ export default function ProjetoSAPDropdown({ value, onChange }) {
           }}
           onFocus={() => inputValue.length >= 2 && setShowOptions(true)}
           onBlur={() => setTimeout(() => setShowOptions(false), 100)}
-          placeholder="Digite código ou nome do projeto"
+          placeholder="Digite o nome do cliente"
           className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-zinc-800 text-gray-800 dark:text-white"
         />
         {showOptions && options.length > 0 && (

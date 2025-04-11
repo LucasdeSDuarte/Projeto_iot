@@ -12,6 +12,7 @@ use App\Http\Controllers\AlarmeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TopologiaController;
 use App\Http\Controllers\SAPProjectController;
+use App\Http\Controllers\SAPClientController;
 
 
 /*
@@ -71,8 +72,9 @@ Route::get('/dashboard/indicadores', [DashboardController::class, 'indicadores']
 
 Route::get('/topologia', [TopologiaController::class, 'index']);
 
-// Rotas de Autenticação SAP E PROJETOS SAP
+// Rotas de Autenticação SAP e Operações
 Route::get('/sap/projects', [SAPProjectController::class, 'listarProjetos']);
+Route::get('/sap/clients', [SAPClientController::class, 'listarPNClientes']);
 
 
 
