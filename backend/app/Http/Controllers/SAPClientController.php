@@ -10,46 +10,61 @@ use App\Models\TokenRequisicao;
 class SAPClientController extends Controller
 {
     /**
-     * Normaliza uma string removendo acentos para comparação.
+     * Lista os BusinessPartners (clientes) do SAP filtrando pelo termo informado
+     * pelo front-end, mas retornando somente os registros cujo CardCode inicie com "CLI".
      *
-     * @param string $string
-     * @return string
-     */
-    private function normalizar($string)
-    {
-        // Converte para UTF-8 e remove acentos (usando iconv para transliteração)
-        return iconv('UTF-8', 'ASCII//TRANSLIT', $string);
-    }
-
-    /**
-     * Lista os PN dos clientes (Business Partners) do SAP.
+     * Exemplo de URL gerada (quando o termo é "NESTLE"):
+     * https://alpina10.ramo.com.br:50000/b1s/v1/BusinessPartners?
+     *    $select=CardCode,CardName,CardType&
+     *    $filter=startswith(CardCode,'CLI') and (contains(CardName,'NESTLE') or contains(CardCode,'NESTLE'))
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function listarPNClientes(Request $request)
     {
-        $termo = $request->query('termo', '');
+        // Recebe o termo enviado pelo front-end (pode estar vazio)
+        $termo = trim($request->query('termo', ''));
 
-        // Obter o token de sessão usando o método da model
+        // Obtém o token/session necessário para a chamada ao SAP
         $sessionId = TokenRequisicao::getSessionId();
         if (!$sessionId) {
             return response()->json(['erro' => 'Token de sessão não encontrado.'], 401);
         }
 
-        // URL do endpoint de Business Partners no SAP
-        $url = 'https://alpina10.ramo.com.br:50000/b1s/v1/BusinessPartners';
+        // Define os parâmetros básicos para a consulta (seleciona os campos desejados)
+        $queryParams = [
+            '$select' => "CardCode,CardName,CardType"
+        ];
+
+        // Define o filtro base para retornar somente registros cujo CardCode inicie com "CLI"
+        $filtroBase = "startswith(CardCode,'CLI')";
+
+        // Se o termo for fornecido, acrescenta a pesquisa do termo no CardName ou CardCode
+        if (!empty($termo)) {
+            $filtro = $filtroBase . " and (contains(CardName,'{$termo}') or contains(CardCode,'{$termo}'))";
+        } else {
+            $filtro = $filtroBase;
+        }
+        $queryParams['$filter'] = $filtro;
+
+        // Define o endpoint base com o domínio informado
+        $baseUrl = "https://alpina10.ramo.com.br:50000/b1s/v1/BusinessPartners";
+        $url = $baseUrl . "?" . http_build_query($queryParams);
 
         try {
-            // Realiza a requisição GET para obter os Business Partners
+            // Realiza a chamada ao SAP Service Layer
             $response = Http::withOptions(['verify' => false])
                 ->withHeaders([
                     'Content-Type' => 'application/json',
-                    'Cookie' => "B1SESSION={$sessionId}"
+                    'Cookie'      => "B1SESSION={$sessionId}"
                 ])
+                ->timeout(15)
+                ->retry(4, 100)
                 ->get($url);
 
-            Log::debug('Resposta SAP BusinessPartners:', $response->json());
+            Log::debug('URL utilizada para consulta a BusinessPartners', ['url' => $url]);
+            Log::debug('Resposta do SAP', $response->json());
 
             if (!$response->successful()) {
                 return response()->json([
@@ -59,38 +74,21 @@ class SAPClientController extends Controller
                 ], $response->status());
             }
 
-            // Obtém os parceiros (Business Partners) da chave "value"
+            // Extrai os registros retornados (campo "value")
             $partners = $response->json()['value'] ?? [];
 
-            // Filtramos para pegar somente os clientes, onde o CardType começa com "c"
-            $clientes = collect($partners)->filter(function ($partner) {
-                return isset($partner['CardType']) &&
-                       strtolower(substr($partner['CardType'], 0, 1)) === 'c';
+            // Mapeia os resultados para um formato simplificado
+            $resultado = collect($partners)->map(function ($partner) {
+                return [
+                    'pn'   => $partner['CardCode'] ?? null,
+                    'nome' => $partner['CardName'] ?? $partner['CardCode'] ?? null,
+                    'tipo' => $partner['CardType'] ?? null,
+                ];
             });
 
-            // Se houver um termo, filtramos também pelo PN (CardCode) ou nome (CardName),
-            // utilizando a normalização para melhorar a busca
-            if (!empty($termo)) {
-                $termoNormalizado = $this->normalizar(strtolower($termo));
-                $clientes = $clientes->filter(function ($partner) use ($termoNormalizado) {
-                    $cardCode = $this->normalizar(strtolower($partner['CardCode']));
-                    $cardName = $this->normalizar(strtolower($partner['CardName'] ?? ''));
-                    return str_contains($cardCode, $termoNormalizado) ||
-                           str_contains($cardName, $termoNormalizado);
-                });
-            }
-
-            // Mapeamos para o formato desejado: exibindo somente o PN
-            $resultado = $clientes->map(function ($partner) {
-                return [
-                    'pn'   => $partner['CardCode'],  // PN é o CardCode
-                    'nome' => $partner['CardName'] ?? $partner['CardCode'],
-                ];
-            })->unique('pn')->values();
-
-            return response()->json($resultado);
-
+            return response()->json($resultado->values());
         } catch (\Exception $e) {
+            Log::error('Erro na requisição de BusinessPartners: ' . $e->getMessage());
             return response()->json(['erro' => 'Erro na requisição: ' . $e->getMessage()], 500);
         }
     }

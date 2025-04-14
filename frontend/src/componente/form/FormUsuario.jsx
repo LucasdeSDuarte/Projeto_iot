@@ -3,7 +3,9 @@ import { Eye, EyeOff } from 'lucide-react';
 import ClientSAPDropdown from '../dropdown/ClientSAPDropdown';
 
 export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
+  // Cria estados para armazenar o nome e o PN do cliente
   const [nome, setNome] = useState(initialData?.nome || '');
+  const [pn, setPn] = useState(initialData?.pn || '');
   const [email, setEmail] = useState(initialData?.email || '');
   const [login, setLogin] = useState(initialData?.login || '');
   const [senha, setSenha] = useState('');
@@ -12,16 +14,17 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
     initialData?.ativo === 1 || initialData?.ativo === true
   );
 
-  // Sempre que houver alteração em initialData, limpa a senha
   useEffect(() => {
+    // Sempre que houver nova informação de initialData, reinicia a senha
     setSenha('');
   }, [initialData]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     const payload = {
       nome,
+      pn,      // inclui também o PN selecionado
       email,
       login,
       ativo,
@@ -40,14 +43,16 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
         {initialData?.id ? 'Editar Cliente' : 'Novo Cliente'}
       </h2>
 
-      {/* Campo de Nome usando o componente auto-sugestivo para PN */}
       <div>
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-          Nome
-        </label>
+
         <ClientSAPDropdown
-          value={nome}
-          onChange={setNome}
+
+          value={{ nome, pn }}
+
+          onChange={({ nome, pn }) => {
+            setNome(nome);
+            setPn(pn);
+          }}
         />
       </div>
 
@@ -79,7 +84,6 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
         />
       </div>
 
-      {/* Campo de Senha */}
       <div>
         <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
           Senha
@@ -109,7 +113,6 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
         </div>
       </div>
 
-      {/* Campo Ativo */}
       <div className="flex items-center gap-2">
         <input
           type="checkbox"
@@ -119,8 +122,7 @@ export default function FormUsuario({ initialData = {}, onSubmit, onCancel }) {
         />
         <label className="text-sm text-gray-700 dark:text-gray-300">Ativo</label>
       </div>
-
-      {/* Botões de Cancelar e Salvar */}
+      
       <div className="flex justify-end gap-2">
         <button
           type="button"

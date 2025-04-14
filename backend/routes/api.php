@@ -74,7 +74,7 @@ Route::get('/topologia', [TopologiaController::class, 'index']);
 
 // Rotas de Autenticação SAP e Operações
 Route::get('/sap/projects', [SAPProjectController::class, 'listarProjetos']);
-Route::get('/sap/clients', [SAPClientController::class, 'listarPNClientes']);
+Route::get('sap/clients', [SAPClientController::class, 'listarPNClientes']);
 
 
 
