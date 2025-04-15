@@ -24,3 +24,1670 @@
 16:17:47 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
 16:18:02 [vite] (client) hmr update /src/componente/form/FormUsuario.jsx, /src/index.css
 16:18:02 [vite] (client) hmr update /src/componente/form/FormUsuario.jsx, /src/index.css
+09:43:27 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
+09:43:27 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
+09:43:27 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
+09:43:30 [vite] (client) ✨ new dependencies optimized: react-icons/ai
+09:43:30 [vite] (client) ✨ optimized dependencies changed. reloading
+09:44:29 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
+09:44:29 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
+09:44:29 [vite] (client) hmr update /src/componente/dropdown/ClientSAPDropdown.jsx, /src/index.css
+10:42:37 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:42:37 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:42:37 [vite] (client) hmr invalidate /src/componente/form/FormAppliance.jsx Could not Fast Refresh (export removed)
+10:42:37 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:42:37 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:48:35 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:48:35 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:48:35 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:55:56 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:55:56 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:55:56 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:56:13 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:56:13 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:56:13 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (174:0)
+
+  172 |   );
+  173 | }
+> 174 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:174:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11153:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12542:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+10:56:13 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (174:0)
+
+  172 |   );
+  173 | }
+> 174 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:174:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11153:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12542:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+10:57:18 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+10:57:18 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:57:18 [vite] (client) Pre-transform error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (175:0)
+
+  173 |   );
+  174 | }
+> 175 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:175:0
+10:57:18 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:57:19 [vite] (client) Pre-transform error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (175:0)
+
+  173 |   );
+  174 | }
+> 175 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:175:0
+10:57:19 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (175:0)
+
+  173 |   );
+  174 | }
+> 175 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:175:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11153:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12542:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+10:57:19 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (175:0)
+
+  173 |   );
+  174 | }
+> 175 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:175:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11153:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12542:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+10:57:27 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:57:27 [vite] (client) Pre-transform error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (174:0)
+
+  172 |   );
+  173 | }
+> 174 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:174:0
+10:57:27 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (174:0)
+
+  172 |   );
+  173 | }
+> 174 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:174:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11153:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12542:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+10:57:27 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:57:27 [vite] (client) Pre-transform error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (174:0)
+
+  172 |   );
+  173 | }
+> 174 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:174:0
+10:57:27 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (174:0)
+
+  172 |   );
+  173 | }
+> 174 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:174:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11153:16)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12542:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+10:57:35 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+10:57:35 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+11:10:06 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:10:06 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:11:46 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:11:46 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:11:46 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/pages/Dispositivos.jsx: Expected corresponding JSX closing tag for <td>. (169:14)
+
+  167 |                   </button>
+  168 |                 </td>
+> 169 |               </tr>
+      |               ^
+  170 |             ))}
+  171 |           </tbody>
+  172 |         </table>
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/pages/Dispositivos.jsx:169:14
+  175|        {meta && (
+  176|          <div className="flex items-center justify-center mt-4 gap-4">
+  177|            <button
+     |           ^
+  178|              onClick={() => setPage(page - 1)}
+  179|              disabled={page <= 1}
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6913:16)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6884:32)
+      at JSXParserMixin.jsxParseElement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6935:17)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6945:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11386:28)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11803:24)
+      at JSXParserMixin.parseArrowExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11785:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11398:12)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseExprListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11885:18)
+      at JSXParserMixin.parseCallExpressionArguments (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10954:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10888:29)
+      at JSXParserMixin.parseSubscript (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10825:19)
+      at JSXParserMixin.parseSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10798:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10789:17)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+11:11:46 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/pages/Dispositivos.jsx: Expected corresponding JSX closing tag for <td>. (169:14)
+
+  167 |                   </button>
+  168 |                 </td>
+> 169 |               </tr>
+      |               ^
+  170 |             ))}
+  171 |           </tbody>
+  172 |         </table>
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/pages/Dispositivos.jsx:169:14
+  175|        {meta && (
+  176|          <div className="flex items-center justify-center mt-4 gap-4">
+  177|            <button
+     |           ^
+  178|              onClick={() => setPage(page - 1)}
+  179|              disabled={page <= 1}
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6913:16)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6884:32)
+      at JSXParserMixin.jsxParseElement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6935:17)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6945:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11386:28)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11803:24)
+      at JSXParserMixin.parseArrowExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11785:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11398:12)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseExprListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11885:18)
+      at JSXParserMixin.parseCallExpressionArguments (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10954:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10888:29)
+      at JSXParserMixin.parseSubscript (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10825:19)
+      at JSXParserMixin.parseSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10798:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10789:17)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+11:11:46 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:11:47 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/pages/Dispositivos.jsx: Expected corresponding JSX closing tag for <td>. (169:14)
+
+  167 |                   </button>
+  168 |                 </td>
+> 169 |               </tr>
+      |               ^
+  170 |             ))}
+  171 |           </tbody>
+  172 |         </table>
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/pages/Dispositivos.jsx:169:14
+  175|        {meta && (
+  176|          <div className="flex items-center justify-center mt-4 gap-4">
+  177|            <button
+     |           ^
+  178|              onClick={() => setPage(page - 1)}
+  179|              disabled={page <= 1}
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6913:16)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6884:32)
+      at JSXParserMixin.jsxParseElement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6935:17)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6945:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11386:28)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11803:24)
+      at JSXParserMixin.parseArrowExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11785:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11398:12)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseExprListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11885:18)
+      at JSXParserMixin.parseCallExpressionArguments (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10954:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10888:29)
+      at JSXParserMixin.parseSubscript (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10825:19)
+      at JSXParserMixin.parseSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10798:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10789:17)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+11:11:49 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:11:49 [vite] (client) hmr update /src/App.jsx, /src/index.css
+11:11:50 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:11:50 [vite] (client) hmr invalidate /src/pages/Dispositivos.jsx Could not Fast Refresh (export removed)
+11:11:50 [vite] (client) hmr update /src/App.jsx, /src/index.css
+11:12:20 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+11:12:20 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+11:12:21 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+11:12:21 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+11:17:03 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:17:03 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:17:04 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:17:04 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:17:38 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:17:38 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:17:38 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+11:48:32 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:48:33 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:48:33 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:48:40 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:48:40 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:48:40 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:48:41 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:49:44 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:49:44 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:49:45 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:49:45 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:49:51 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:49:51 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:49:51 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:49:52 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:52:42 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:52:42 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:52:44 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:52:45 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:52:45 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:06 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:06 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:07 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:07 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:15 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:15 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:34 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:34 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:34 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:35 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:49 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:53:50 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:57:16 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:57:16 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:57:20 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:57:21 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:58:55 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:58:55 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:58:59 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:58:59 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:59:02 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:02 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:12 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:12 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:21 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:22 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:23 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:59:23 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:59:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+11:59:53 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+11:59:53 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:00:05 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:00:06 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:00:09 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:00:09 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:00:19 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:00:19 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:00:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:00:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:04:06 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:04:06 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:04:09 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:04:09 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:04:17 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:04:18 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:05:43 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:05:43 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:05:45 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:05:45 [vite] (client) hmr update /src/componente/ParticlesBackground.jsx, /src/index.css
+12:06:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:06:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:06:11 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:06:11 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:06:12 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:07:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:07:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:07:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:07:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:07:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:07:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:22 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:22 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:23 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:23 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:59 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:10:59 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:11:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:11:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:11:05 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:11:05 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:12:49 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:12:49 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:12:57 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:12:58 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:15 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:15 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:15 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:13:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:20 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:20 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:37 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:37 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:55 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:14:55 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:15 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:16 [vite] (client) hmr update /src/App.jsx, /src/index.css
+12:15:16 [vite] (client) hmr update /src/App.jsx, /src/index.css
+12:15:16 [vite] (client) hmr invalidate /src/pages/Login.jsx Could not Fast Refresh (export removed)
+12:15:16 [vite] (client) hmr update /src/App.jsx, /src/index.css
+12:15:28 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:29 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:29 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:43 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:43 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:47 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:47 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:15:47 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:04 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:05 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:05 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:14 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:14 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:14 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:23 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:23 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:23 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:24 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:16:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:00 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:25 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:25 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:17:25 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:18:05 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:18:05 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:18:06 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:18:06 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:03 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:03 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:03 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:16 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:17 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:32 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:33 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:19:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:20:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:20:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:20:01 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:20:27 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:20:27 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:20:27 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+12:21:48 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+12:21:48 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+12:24:18 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:24:18 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:24:18 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:35:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:35:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:38:31 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:38:32 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:38:32 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:38:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:38:45 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+12:38:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:25 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:25 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token, expected ")" (30:7)
+
+  28 |       clientes.length > 0 &&
+  29 |       todasTorres.length > 0 &&
+> 30 |       c!torreId
+     |        ^
+  31 |     ) {
+  32 |       // Define o cliente
+  33 |       setClienteIdSelecionado(initialData.cliente_id);
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:30:7
+  30 |        c!torreId
+  31 |      ) {
+  32 |        // Define o cliente
+     |              ^
+  33 |        setClienteIdSelecionado(initialData.cliente_id);
+  34 |    
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.expect (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3668:12)
+      at JSXParserMixin.parseHeaderExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12697:10)
+      at JSXParserMixin.parseIfStatement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12793:22)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12461:21)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseArrowExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11785:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11398:12)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseExprListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11885:18)
+      at JSXParserMixin.parseCallExpressionArguments (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10954:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10888:29)
+      at JSXParserMixin.parseSubscript (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10825:19)
+      at JSXParserMixin.parseSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10798:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10789:17)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+12:39:25 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:25 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token, expected ")" (30:7)
+
+  28 |       clientes.length > 0 &&
+  29 |       todasTorres.length > 0 &&
+> 30 |       c!torreId
+     |        ^
+  31 |     ) {
+  32 |       // Define o cliente
+  33 |       setClienteIdSelecionado(initialData.cliente_id);
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:30:7
+  30 |        c!torreId
+  31 |      ) {
+  32 |        // Define o cliente
+     |              ^
+  33 |        setClienteIdSelecionado(initialData.cliente_id);
+  34 |    
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.expect (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3668:12)
+      at JSXParserMixin.parseHeaderExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12697:10)
+      at JSXParserMixin.parseIfStatement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12793:22)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12461:21)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseArrowExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11785:10)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11398:12)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseExprListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11885:18)
+      at JSXParserMixin.parseCallExpressionArguments (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10954:22)
+      at JSXParserMixin.parseCoverCallAndAsyncArrowHead (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10888:29)
+      at JSXParserMixin.parseSubscript (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10825:19)
+      at JSXParserMixin.parseSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10798:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10789:17)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12559:23)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+12:39:29 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:30 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:55 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:55 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:39:55 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:42:25 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:42:26 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:46:35 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:35 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:35 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:35 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:53 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:53 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:53 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:55 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:55 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:46:56 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:47:05 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:47:05 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:53:58 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:53:58 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:53:58 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:54:04 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:54:04 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:55:46 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:55:46 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:55:53 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:55:54 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:55:54 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+12:55:57 [vite] (client) ✨ new dependencies optimized: react-icons/im
+12:55:57 [vite] (client) ✨ optimized dependencies changed. reloading
+12:59:48 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:48 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:48 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:48 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (112:0)
+
+  110 |       <AutoSuggestDropdown
+  111 |         label="Torre Vinculada"
+> 112 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:112:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.jsxParseIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6755:12)
+      at JSXParserMixin.jsxParseNamespacedName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6762:23)
+      at JSXParserMixin.jsxParseAttribute (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6838:22)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6853:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6848:17)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6872:33)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6884:32)
+      at JSXParserMixin.jsxParseElement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6935:17)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6945:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11386:28)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseReturnStatement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12806:28)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12463:21)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+12:59:48 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (112:0)
+
+  110 |       <AutoSuggestDropdown
+  111 |         label="Torre Vinculada"
+> 112 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:112:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.jsxParseIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6755:12)
+      at JSXParserMixin.jsxParseNamespacedName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6762:23)
+      at JSXParserMixin.jsxParseAttribute (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6838:22)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6853:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6848:17)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6872:33)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6884:32)
+      at JSXParserMixin.jsxParseElement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6935:17)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6945:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11386:28)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseReturnStatement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12806:28)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12463:21)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+12:59:48 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx: Unexpected token (112:0)
+
+  110 |       <AutoSuggestDropdown
+  111 |         label="Torre Vinculada"
+> 112 |
+      | ^
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAppliance.jsx:112:0
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at JSXParserMixin.unexpected (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3358:16)
+      at JSXParserMixin.jsxParseIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6755:12)
+      at JSXParserMixin.jsxParseNamespacedName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6762:23)
+      at JSXParserMixin.jsxParseAttribute (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6838:22)
+      at JSXParserMixin.jsxParseOpeningElementAfterName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6853:28)
+      at JSXParserMixin.jsxParseOpeningElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6848:17)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6872:33)
+      at JSXParserMixin.jsxParseElementAt (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6884:32)
+      at JSXParserMixin.jsxParseElement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6935:17)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6945:19)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12126:12)
+      at JSXParserMixin.parseMaybeAssignAllowIn (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10507:17)
+      at JSXParserMixin.parseParenAndDistinguishExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11386:28)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11033:23)
+      at JSXParserMixin.parseExprAtom (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:6950:20)
+      at JSXParserMixin.parseExprSubscripts (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10785:23)
+      at JSXParserMixin.parseUpdate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10770:21)
+      at JSXParserMixin.parseMaybeUnary (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10750:23)
+      at JSXParserMixin.parseMaybeUnaryOrPrivate (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10603:61)
+      at JSXParserMixin.parseExprOps (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10608:23)
+      at JSXParserMixin.parseMaybeConditional (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10585:23)
+      at JSXParserMixin.parseMaybeAssign (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10538:21)
+      at JSXParserMixin.parseExpressionBase (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10491:23)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:39
+      at JSXParserMixin.allowInAnd (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12121:16)
+      at JSXParserMixin.parseExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:10487:17)
+      at JSXParserMixin.parseReturnStatement (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12806:28)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12463:21)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseStatementListItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12412:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:61)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseBlock (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12961:10)
+      at JSXParserMixin.parseFunctionBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11810:24)
+      at JSXParserMixin.parseFunctionBodyAndFinish (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:11796:10)
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13105:12
+      at JSXParserMixin.withSmartMixTopicForbiddingContext (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12103:14)
+      at JSXParserMixin.parseFunction (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13104:10)
+      at JSXParserMixin.parseExportDefaultExpression (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13566:19)
+      at JSXParserMixin.parseExport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13487:25)
+12:59:52 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:52 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:58 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:58 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+12:59:59 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+14:15:36 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+14:15:37 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:28:41 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:28:41 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:30:35 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:30:35 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:31:21 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:31:21 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:33:56 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:33:56 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:38:37 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:38:37 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:38:48 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:38:48 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:40:26 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:40:26 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:41:47 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:41:47 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:42:50 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:42:51 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:43:03 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:43:03 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:43:39 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:43:39 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:46:13 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:46:13 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:50:31 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+15:50:31 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+15:50:47 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:50:48 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+15:55:54 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+15:55:54 [vite] (client) hmr update /src/componente/dropdown/AutoSuggestDropdown.jsx, /src/index.css
+15:57:02 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+15:57:02 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:12:37 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:12:37 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:12:37 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormSensor.jsx: Identifier 'React' has already been declared. (169:7)
+
+  167 |   );
+  168 | }
+> 169 | import React, { useEffect, useState } from 'react';
+      |        ^
+  170 | import axios from 'axios';
+  171 | import AutoSuggestDropdown from '../dropdown/AutoSuggestDropdown';
+  172 |
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormSensor.jsx:169:7
+  171|  import AutoSuggestDropdown from '../dropdown/AutoSuggestDropdown';
+  172|  
+  173|  const API = import.meta.env.VITE_API_URL;
+     |                              ^
+  174|  
+  175|  export default function FormSensor({ initialData = {}, onSubmit, onCancel }) {
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at ScopeHandler.checkRedeclarationInScope (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:1566:19)
+      at ScopeHandler.declareName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:1532:12)
+      at JSXParserMixin.declareNameFromIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:7494:16)
+      at JSXParserMixin.checkIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:7490:12)
+      at JSXParserMixin.checkLVal (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:7431:12)
+      at JSXParserMixin.finishImportSpecifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13926:10)
+      at JSXParserMixin.parseImportSpecifierLocal (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13923:31)
+      at JSXParserMixin.maybeParseDefaultImportSpecifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14030:12)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13899:29)
+      at JSXParserMixin.parseImport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13895:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12540:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:113:33
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:287:14)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+16:12:37 [vite] Internal server error: /var/www/html/projetos-iot/frontend/src/componente/form/FormSensor.jsx: Identifier 'React' has already been declared. (169:7)
+
+  167 |   );
+  168 | }
+> 169 | import React, { useEffect, useState } from 'react';
+      |        ^
+  170 | import axios from 'axios';
+  171 | import AutoSuggestDropdown from '../dropdown/AutoSuggestDropdown';
+  172 |
+  Plugin: vite:react-babel
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormSensor.jsx:169:7
+  171|  import AutoSuggestDropdown from '../dropdown/AutoSuggestDropdown';
+  172|  
+  173|  const API = import.meta.env.VITE_API_URL;
+     |                              ^
+  174|  
+  175|  export default function FormSensor({ initialData = {}, onSubmit, onCancel }) {
+      at constructor (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:360:19)
+      at JSXParserMixin.raise (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:3338:19)
+      at ScopeHandler.checkRedeclarationInScope (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:1566:19)
+      at ScopeHandler.declareName (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:1532:12)
+      at JSXParserMixin.declareNameFromIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:7494:16)
+      at JSXParserMixin.checkIdentifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:7490:12)
+      at JSXParserMixin.checkLVal (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:7431:12)
+      at JSXParserMixin.finishImportSpecifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13926:10)
+      at JSXParserMixin.parseImportSpecifierLocal (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13923:31)
+      at JSXParserMixin.maybeParseDefaultImportSpecifier (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14030:12)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13899:29)
+      at JSXParserMixin.parseImport (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:13895:17)
+      at JSXParserMixin.parseStatementContent (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12540:27)
+      at JSXParserMixin.parseStatementLike (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12432:17)
+      at JSXParserMixin.parseModuleItem (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12409:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12980:36)
+      at JSXParserMixin.parseBlockBody (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12973:10)
+      at JSXParserMixin.parseProgram (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12306:10)
+      at JSXParserMixin.parseTopLevel (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:12296:25)
+      at JSXParserMixin.parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14152:10)
+      at parse (/var/www/html/projetos-iot/frontend/node_modules/@babel/parser/lib/index.js:14186:38)
+      at parser (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/parser/index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transformation/index.js:22:50)
+      at run.next (<anonymous>)
+      at transform (/var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:261:32)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:189:28
+      at /var/www/html/projetos-iot/frontend/node_modules/@babel/core/lib/gensync-utils/async.js:67:7
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:113:33
+      at step (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:287:14)
+      at /var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:273:13
+      at async.call.result.err.err (/var/www/html/projetos-iot/frontend/node_modules/gensync/index.js:223:11)
+16:12:39 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:12:39 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:12:42 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:12:42 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:19:35 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:19:35 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:19:38 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:19:38 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:24:42 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:24:43 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:10 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:11 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:27 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:27 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:39 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:40 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:55 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:25:55 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:07 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:07 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:21 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:22 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:33 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:33 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:52 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:26:52 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:02 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:02 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:15 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:16 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:33 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:34 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:37 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:27:38 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:08 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:08 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:22 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:23 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:37 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:37 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:52 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:28:53 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:32:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:32:35 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:35:52 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:35:52 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:36:09 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:36:09 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:36:38 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:36:38 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:36:57 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:36:57 [vite] (client) hmr update /src/pages/Login.jsx, /src/index.css
+16:44:54 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+16:44:54 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+16:51:11 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:51:11 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+16:53:15 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+16:53:15 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:02:37 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:02:37 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:03:12 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:03:12 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:08:08 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:08:08 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:10:18 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:10:18 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:13:13 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:13:14 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:13:17 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:13:18 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:42:51 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:42:51 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:44:44 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:44:44 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:45:17 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:45:17 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:45:32 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:45:32 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+17:49:18 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:49:19 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:49:52 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:49:53 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:51:29 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:51:29 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:54:49 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:54:49 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:55:20 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:55:20 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:55:49 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:55:49 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:55:56 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:55:57 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:56:23 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:56:23 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:56:29 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:56:29 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:58:40 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+17:58:40 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+18:02:09 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+18:02:10 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+18:11:32 [vite] (client) hmr update /src/pages/Topologia.jsx, /src/index.css
+18:11:32 [vite] (client) hmr update /src/pages/Topologia.jsx, /src/index.css
+18:12:12 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+18:12:12 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+18:12:14 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+18:12:15 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+18:20:37 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+18:20:37 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+18:20:37 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+18:20:37 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+18:21:07 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:21:08 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:21:08 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+18:21:08 [vite] (client) Pre-transform error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+18:21:08 [vite] (client) Pre-transform error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+18:21:08 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+18:22:35 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:22:35 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:22:35 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+18:22:35 [vite] (client) Pre-transform error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+18:22:35 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+18:22:35 [vite] (client) Pre-transform error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+18:22:41 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:22:42 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:22:42 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+18:22:42 [vite] (client) Pre-transform error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+18:22:42 [vite] (client) Pre-transform error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+18:22:42 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+18:23:09 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:23:09 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:32:12 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+18:32:12 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+18:32:12 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+18:32:12 [vite] Internal server error: Failed to resolve import "../dropdown/AutoSuggestDropdown" from "src/pages/AdminMonitoramento.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/pages/AdminMonitoramento.jsx:4:32
+  19 |  import axios from "axios";
+  20 |  import DashboardLayout from "../componente/DashboardLayout";
+  21 |  import AutoSuggestDropdown from "../dropdown/AutoSuggestDropdown";
+     |                                   ^
+  22 |  const API = import.meta.env.VITE_API_URL;
+  23 |  export default function AdminMonitoramento() {
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+18:32:32 [vite] (client) hmr update /src/App.jsx, /src/index.css
+18:32:33 [vite] (client) hmr update /src/App.jsx, /src/index.css

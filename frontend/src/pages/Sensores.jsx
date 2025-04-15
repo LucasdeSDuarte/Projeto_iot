@@ -38,11 +38,25 @@ export default function Sensores() {
 
   const handleSubmit = async (data) => {
     try {
-      if (editData) {
-        await api.put(`/sensores/${editData.id}`, data);
-      } else {
-        await api.post('/sensores', data);
+      const payload = {
+        tipo: data.tipo,
+        unidade: data.unidade,
+        identificador: data.identificador,
+        ativo: data.ativo,
+        appliance_id: data.appliance?.id || data.appliance_id, // <- Corrigido aqui
+      };
+  
+      if (!payload.appliance_id) {
+        alert('Dispositivo não selecionado corretamente.');
+        return;
       }
+  
+      if (editData) {
+        await api.put(`/sensores/${editData.id}`, payload);
+      } else {
+        await api.post('/sensores', payload);
+      }
+  
       setShowForm(false);
       carregarSensores(page);
     } catch (error) {
@@ -97,17 +111,27 @@ export default function Sensores() {
         <table className="min-w-full bg-white dark:bg-zinc-800 rounded-xl shadow-md">
           <thead className="bg-zinc-100 dark:bg-zinc-700 border-b">
             <tr>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Tipo</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Status</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Transdutor</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Identificador</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Unidade</th>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Dispositivo</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Cliente / Nome</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
             </tr>
           </thead>
           <tbody>
             {sensoresFiltrados.map((s) => (
               <tr key={s.id} className="border-b dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition">
-                <td className="py-3 px-4">{s.tipo}</td>
+                <td className="py-3 px-4">
+                  <span
+                    className={`inline-block px-3 py-1 rounded-full text-white font-medium ${
+                      s.ativo ? 'bg-green-400' : 'bg-red-400'
+                    }`}
+                  >
+                    {s.ativo ? 'Ativo' : 'Desativado'}
+                  </span>
+                </td>
+                <td className="py-3 px-4 text-gray-800 dark:text-white">{s.tipo}</td>
                 <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{s.identificador}</td>
                 <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{s.unidade}</td>
                 <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{s.appliance?.nome}</td>
@@ -129,7 +153,7 @@ export default function Sensores() {
             ))}
             {sensoresFiltrados.length === 0 && (
               <tr>
-                <td colSpan="5" className="text-center text-gray-500 dark:text-gray-400 py-4">
+                <td colSpan="6" className="text-center text-gray-500 dark:text-gray-400 py-4">
                   Nenhum sensor encontrado.
                 </td>
               </tr>

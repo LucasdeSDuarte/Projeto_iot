@@ -106,7 +106,7 @@ export default function Topologia() {
           const appId = `app-${app.id}`;
           tempNodes.push({
             id: appId,
-            data: { label: app.nome, ...app },
+            data: { label: app.tipo, ...app },
             position: { x: 0, y: 0 },
             style: { backgroundColor: '#f3e8ff', border: '1px solid #a855f7' },
           });

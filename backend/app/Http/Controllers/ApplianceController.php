@@ -16,7 +16,7 @@ class ApplianceController extends Controller
     {
         $perPage = $request->query('per_page', 10);
 
-        $appliances = Appliance::with('torre')->paginate($perPage);
+        $appliances = Appliance::with('torre.cliente')->paginate($perPage);
 
         return response()->json([
             'status' => 'success',
@@ -49,7 +49,7 @@ class ApplianceController extends Controller
             ]);
 
             $appliance = Appliance::create($validated);
-            $appliance->load('torre');
+            $appliance->load('torre.cliente');
 
             return response()->json([
                 'status' => 'success',
@@ -79,10 +79,11 @@ class ApplianceController extends Controller
                 'tipo' => 'required|string|max:255',
                 'descricao' => 'nullable|string',
                 'rota' => 'nullable|string|max:255',
+                'ativo' => 'required|boolean',
             ]);
 
             $appliance->update($validated);
-            $appliance->load('torre');
+            $appliance->load('torre.cliente');
 
             return response()->json([
                 'status' => 'success',

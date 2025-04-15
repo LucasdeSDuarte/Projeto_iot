@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import DashboardLayout from '../componente/DashboardLayout';
-import { Plus, Pencil, Trash2, X } from 'lucide-react';
+import { Plus, Pencil, Trash2, X, Info } from 'lucide-react';
 import FormAppliance from '../componente/form/FormAppliance';
 import api from '../services/api';
 
@@ -11,6 +11,7 @@ export default function Dispositivos() {
   const [meta, setMeta] = useState(null);
   const [page, setPage] = useState(1);
   const [filtro, setFiltro] = useState('');
+  const [descricaoSelecionada, setDescricaoSelecionada] = useState('');
 
   useEffect(() => {
     carregarDispositivos(page);
@@ -50,9 +51,18 @@ export default function Dispositivos() {
     }
   };
 
+  const handleToggleAtivo = async (id) => {
+    try {
+      await api.patch(`/appliances/${id}/status`);
+      carregarDispositivos(page);
+    } catch (err) {
+      console.error('Erro ao alterar status:', err);
+    }
+  };
+
   const dispositivosFiltrados = dispositivos.filter((d) =>
-    d.nome.toLowerCase().includes(filtro.toLowerCase()) ||
-    (d.tipo && d.tipo.toLowerCase().includes(filtro.toLowerCase()))
+    d.nome?.toLowerCase().includes(filtro.toLowerCase()) ||
+    d.tipo?.toLowerCase().includes(filtro.toLowerCase())
   );
 
   return (
@@ -93,10 +103,26 @@ export default function Dispositivos() {
         </div>
       )}
 
+      {descricaoSelecionada && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm flex justify-center items-center z-50">
+          <div className="bg-white dark:bg-zinc-800 p-6 rounded-md shadow-xl w-full max-w-md relative">
+            <button
+              className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
+              onClick={() => setDescricaoSelecionada('')}
+            >
+              <X size={20} />
+            </button>
+            <h3 className="text-lg font-semibold mb-2">Descrição do Dispositivo</h3>
+            <p className="text-gray-700 dark:text-gray-200">{descricaoSelecionada}</p>
+          </div>
+        </div>
+      )}
+
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white dark:bg-zinc-800 rounded-xl shadow-md">
           <thead className="bg-zinc-100 dark:bg-zinc-700 border-b">
             <tr>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Status</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Cliente / Nome</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Tipo</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Torre</th>
@@ -104,10 +130,19 @@ export default function Dispositivos() {
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
             </tr>
           </thead>
-
           <tbody>
             {dispositivosFiltrados.map((d) => (
               <tr key={d.id} className="border-b hover:bg-zinc-50 dark:hover:bg-zinc-700">
+                <td className="py-3 px-4">
+                  <button
+                    onClick={() => handleToggleAtivo(d.id)}
+                    className={`px-3 py-1 text-sm font-medium rounded-full text-white ${
+                      d.ativo ? 'bg-green-400' : 'bg-red-400'
+                    }`}
+                  >
+                    {d.ativo ? 'Ativo' : 'Desativado'}
+                  </button>
+                </td>
                 <td className="py-3 px-4 text-zinc-800 dark:text-white">{d.nome}</td>
                 <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{d.tipo}</td>
                 <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{d.torre?.nome}</td>
@@ -120,11 +155,14 @@ export default function Dispositivos() {
                     <span className="text-gray-400 italic dark:text-gray-500">Não definida</span>
                   )}
                 </td>
-                <td className="py-3 px-4 flex gap-2">
-                  <button className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400" onClick={() => handleEdit(d)}>
+                <td className="py-3 px-4 flex gap-3">
+                  <button onClick={() => handleEdit(d)} className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                     <Pencil size={18} />
                   </button>
-                  <button className="text-red-500 hover:text-red-600 dark:hover:text-red-400" onClick={() => alert('Em breve')}>
+                  <button onClick={() => setDescricaoSelecionada(d.descricao)} className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300">
+                    <Info size={18} />
+                  </button>
+                  <button onClick={() => alert('Em breve')} className="text-red-500 hover:text-red-600 dark:hover:text-red-400">
                     <Trash2 size={18} />
                   </button>
                 </td>

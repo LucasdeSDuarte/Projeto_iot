@@ -39,10 +39,6 @@ export default function AutoSuggestDropdown({
   };
 
   const handleBlur = () => {
-    // Envia o valor digitado mesmo se não for uma opção
-    if (!selectedOption || selectedOption.label !== inputValue) {
-      onChange({ label: inputValue, value: inputValue });
-    }
     setTimeout(() => setShowOptions(false), 100);
   };
 

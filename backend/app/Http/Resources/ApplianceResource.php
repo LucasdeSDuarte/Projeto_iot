@@ -18,7 +18,10 @@ class ApplianceResource extends JsonResource
             'created_at' => $this->created_at?->format('Y-m-d H:i:s'),
             'updated_at' => $this->updated_at?->format('Y-m-d H:i:s'),
 
-            // Relacionamento com torre (nome + id)
+            // cliente_id usado no frontend para selecionar cliente atual
+            'cliente_id' => optional($this->torre->cliente)->id,
+
+            // Torre associada
             'torre' => $this->whenLoaded('torre', function () {
                 return [
                     'id'   => $this->torre->id,
@@ -26,8 +29,9 @@ class ApplianceResource extends JsonResource
                 ];
             }),
 
-            // Relacionamento com sensores (caso esteja usando)
+            // Sensores vinculados (se usados)
             'sensors' => SensorResource::collection($this->whenLoaded('sensors')),
         ];
     }
+
 }
