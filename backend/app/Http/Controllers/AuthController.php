@@ -36,8 +36,8 @@ class AuthController extends Controller
             $colaborador = DB::connection('external')->table('users')
                 ->where('Usuario', $login)
                 ->where(function ($query) {
-                    $query->where('IoTAdm', 1)
-                          ->orWhere('IoTComum', 1);
+                    $query->where('asddsa', 1)
+                          ->orWhere('TITOOLSTI', 1);
                 })
                 ->first();
 

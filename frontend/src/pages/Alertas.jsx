@@ -93,33 +93,56 @@ export default function Alertas() {
       )}
 
       <div className="overflow-x-auto">
-        <table className="min-w-full bg-white dark:bg-zinc-900 rounded-xl shadow-md">
-          <thead className="bg-zinc-100 dark:bg-zinc-800 border-b border-gray-200 dark:border-zinc-700">
+        <table className="min-w-full bg-white dark:bg-zinc-800 rounded-xl shadow-md">
+          <thead className="bg-zinc-100 dark:bg-zinc-700 border-b">
             <tr>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Descrição</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Valor Alarme</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Email Destino</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Dispositivo</th>
-              <th className="py-3 px-4 text-left text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Status</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Descrição</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Valor Alarme</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Email</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Dispositivo</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
             </tr>
           </thead>
           <tbody>
             {alarmesFiltrados.map((a) => (
-              <tr key={a.id} className="border-b hover:bg-zinc-50 dark:hover:bg-zinc-800 border-gray-200 dark:border-zinc-700">
-                <td className="py-3 px-4 text-gray-700 dark:text-gray-200">{a.descricao}</td>
-                <td className="py-3 px-4 text-gray-700 dark:text-gray-200">{a.valor_alarme}</td>
-                <td className="py-3 px-4 text-sm text-gray-700 dark:text-gray-200">{a.email}</td>
-                <td className="py-3 px-4 text-sm text-gray-600 dark:text-gray-300">{a.sensor?.appliance?.nome || '---'}</td>
+              <tr key={a.id} className="border-b dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition">
+                <td className="py-3 px-4">
+                  <span
+                    className={`inline-block px-3 py-1 rounded-full text-white font-medium ${
+                      a.ativo ? 'bg-green-400' : 'bg-red-400'
+                    }`}
+                  >
+                    {a.ativo ? 'Ativo' : 'Desativado'}
+                  </span>
+                </td>
+                <td className="py-3 px-4 text-gray-800 dark:text-white">{a.descricao}</td>
+                <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{a.valor_alarme}</td>
+                <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{a.email}</td>
+                <td className="py-3 px-4 text-gray-600 dark:text-gray-300">{a.sensor?.appliance?.nome || '---'}</td>
                 <td className="py-3 px-4 flex gap-2">
-                  <button onClick={() => handleEdit(a)} className="text-blue-500 hover:text-blue-600">
+                  <button
+                    className="text-blue-500 hover:text-blue-600"
+                    onClick={() => handleEdit(a)}
+                  >
                     <Pencil size={18} />
                   </button>
-                  <button onClick={() => alert('Em breve')} className="text-red-500 hover:text-red-600">
+                  <button
+                    className="text-red-500 hover:text-red-600"
+                    onClick={() => alert('Em breve')}
+                  >
                     <Trash2 size={18} />
                   </button>
                 </td>
               </tr>
             ))}
+            {alarmesFiltrados.length === 0 && (
+              <tr>
+                <td colSpan="6" className="text-center text-gray-500 dark:text-gray-400 py-4">
+                  Nenhum alerta encontrado.
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
@@ -129,17 +152,17 @@ export default function Alertas() {
           <button
             onClick={() => setPage(page - 1)}
             disabled={page <= 1}
-            className="px-4 py-2 bg-gray-300 dark:bg-zinc-700 text-black dark:text-white rounded-md hover:bg-gray-400 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-gray-600 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 disabled:opacity-50"
           >
             Anterior
           </button>
-          <span className="text-gray-700 dark:text-gray-200">
+          <span className="text-sm text-gray-700 dark:text-gray-300">
             Página {meta.current_page} de {meta.last_page}
           </span>
           <button
             onClick={() => setPage(page + 1)}
             disabled={page >= meta.last_page}
-            className="px-4 py-2 bg-gray-300 dark:bg-zinc-700 text-black dark:text-white rounded-md hover:bg-gray-400 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 dark:bg-gray-600 rounded-md hover:bg-gray-400 dark:hover:bg-gray-500 disabled:opacity-50"
           >
             Próxima
           </button>

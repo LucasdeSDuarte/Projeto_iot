@@ -33,11 +33,11 @@ return [
 
         'external' => [
             'driver' => 'mysql',
-            'host' => env('DB_EXTERNAL_HOST', '10.0.0.183'),
+            'host' => env('DB_EXTERNAL_HOST', '162.240.102.146'),
             'port' => env('DB_EXTERNAL_PORT', '3306'),
             'database' => env('DB_EXTERNAL_DATABASE', 'ControlAccesExtern'),
             'username' => env('DB_EXTERNAL_USERNAME', 'denunciaDB'),
-            'password' => env('DB_EXTERNAL_PASSWORD', '18122001'),
+            'password' => env('DB_EXTERNAL_PASSWORD', '@Nu84st09LP'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
@@ -47,11 +47,11 @@ return [
         ],
         'requisicao' => [
             'driver' => 'mysql',
-            'host' => env('DB_REQUISICAO_HOST', '10.0.0.183'),
+            'host' => env('DB_REQUISICAO_HOST', '162.240.102.146'),
             'port' => env('DB_REQUISICAO_PORT', '3306'),
             'database' => env('DB_REQUISICAO_DATABASE', 'Requisicao'),
             'username' => env('DB_REQUISICAO_USERNAME', 'denunciaDB'),
-            'password' => env('DB_REQUISICAO_PASSWORD', '18122001'),
+            'password' => env('DB_REQUISICAO_PASSWORD', '@Nu84st09LP'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',

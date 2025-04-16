@@ -1,16 +1,18 @@
-import React from 'react';
-import { LogOut, Home, Bell, Activity, Users, Server, Cpu, AlertTriangle, Monitor } from 'lucide-react';
+import React, { useState, useContext } from 'react';
+import {
+  LogOut, Home, Bell, Activity, Users, Server,
+  Cpu, AlertTriangle, Monitor, Menu
+} from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Moon, Sun } from 'lucide-react';
-import { useContext } from 'react';
-import { ThemeContext } from '../context/ThemeContext';
 import ToggleThemeButton from '../componente/botao/ToggleThemeButton';
-
+import { ThemeContext } from '../context/ThemeContext';
 
 export default function DashboardLayout({ children, tipo }) {
   const navigate = useNavigate();
   const location = useLocation();
   const { theme, setTheme } = useContext(ThemeContext);
+
+  const [menuAberto, setMenuAberto] = useState(false);
 
   const handleLogout = () => {
     localStorage.clear();
@@ -34,8 +36,46 @@ export default function DashboardLayout({ children, tipo }) {
   ];
 
   return (
-    <div className="flex min-h-screen bg-white text-gray-800 dark:bg-zinc-900 dark:text-white">
-      {/* Sidebar */}
+    <div className="flex min-h-screen bg-white text-gray-800 dark:bg-zinc-900 dark:text-white relative">
+      
+      {/* Sidebar Mobile - Drawer */}
+      <div className={`fixed inset-0 z-40 transition-transform duration-300 md:hidden ${menuAberto ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="w-64 bg-zinc-900 h-full shadow-lg flex flex-col relative">
+          <div className="p-6 text-2xl font-bold border-b border-zinc-700">
+            IoT <span className="text-green-400">Dashboard</span>
+          </div>
+          <nav className="mt-6 space-y-1 flex-1 overflow-auto">
+            {menus.map((menu, idx) => {
+              const isActive = location.pathname === menu.path;
+              return (
+                <div
+                  key={idx}
+                  onClick={() => {
+                    navigate(menu.path);
+                    setMenuAberto(false);
+                  }}
+                  className={`flex items-center gap-3 px-6 py-2 cursor-pointer transition
+                    ${isActive ? 'bg-zinc-800 text-green-400' : 'hover:bg-zinc-800 text-white'}`}
+                >
+                  <menu.icon size={20} />
+                  <span>{menu.label}</span>
+                </div>
+              );
+            })}
+          </nav>
+          <div className="p-6 space-y-4">
+            <ToggleThemeButton />
+            <button
+              onClick={handleLogout}
+              className="flex items-center gap-2 text-red-400 hover:text-red-300"
+            >
+              <LogOut size={18} /> Sair
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Sidebar Desktop */}
       <aside className="w-64 bg-zinc-900 text-white hidden md:block relative">
         <div className="p-6 text-2xl font-bold border-b border-zinc-700">
           IoT <span className="text-green-400">Dashboard</span>
@@ -71,6 +111,18 @@ export default function DashboardLayout({ children, tipo }) {
 
       {/* Main content */}
       <main className="flex-1 p-6 overflow-y-auto bg-white text-gray-800 dark:bg-zinc-900 dark:text-white">
+        {/* Mobile Top Bar */}
+        <div className="md:hidden mb-4 flex items-center justify-between">
+          <button
+            onClick={() => setMenuAberto(true)}
+            className="text-zinc-800 dark:text-white"
+            aria-label="Abrir menu"
+          >
+            <Menu size={28} />
+          </button>
+          <ToggleThemeButton />
+        </div>
+
         {children}
       </main>
     </div>

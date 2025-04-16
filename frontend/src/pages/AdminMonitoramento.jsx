@@ -14,97 +14,72 @@ export default function AdminMonitoramento() {
 
   const [dispositivos, setDispositivos] = useState([]);
   const [dadosMonitorados, setDadosMonitorados] = useState({});
+  const [loading, setLoading] = useState(false);
 
-  const [loadingClientes, setLoadingClientes] = useState(false);
-  const [loadingDispositivos, setLoadingDispositivos] = useState(false);
-
-  // Mapeamento torre_id => projeto
-  const [torreIdToProjeto, setTorreIdToProjeto] = useState({});
-
-  // Carrega lista de clientes
   useEffect(() => {
-    const carregarClientes = async () => {
-      setLoadingClientes(true);
-      try {
-        const res = await axios.get(`${API}/clientes`);
-        const clientes = res.data.data || [];
-        setClientesOptions(clientes.map(c => ({ label: c.nome, value: c.id })));
-      } catch (err) {
-        console.error('Erro ao buscar clientes:', err);
-      } finally {
-        setLoadingClientes(false);
-      }
-    };
-
     carregarClientes();
+    carregarDispositivos();
   }, []);
 
-  // Carrega dispositivos + projetos quando cliente muda
-  useEffect(() => {
-    const buscarDadosDoCliente = async () => {
-      if (!clienteSelecionado) return;
-      setLoadingDispositivos(true);
-      setDispositivos([]);
-      setProjetosOptions([]);
-      setProjetoSelecionado(null);
-      setDadosMonitorados({});
+  const carregarClientes = async () => {
+    try {
+      const res = await axios.get(`${API}/clientes`);
+      const clientes = res.data.data || [];
+      setClientesOptions(clientes.map(c => ({ label: c.nome, value: c.id })));
+    } catch (err) {
+      console.error('Erro ao carregar clientes:', err);
+    }
+  };
 
-      try {
-        const [applianceRes, torresRes] = await Promise.all([
-          axios.get(`${API}/appliances?cliente=${clienteSelecionado.value}`),
-          axios.get(`${API}/torres?cliente=${clienteSelecionado.value}`),
-        ]);
+  const carregarDispositivos = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get(`${API}/appliances`);
+      const lista = res.data.data || [];
 
-        const appliances = applianceRes.data.data || [];
-        const torres = torresRes.data.data || [];
+      // Define lista de projetos únicos
+      const projetosUnicos = [...new Set(
+        lista.map(item => item.torre?.projeto).filter(Boolean)
+      )];
+      setProjetosOptions(projetosUnicos.map(p => ({ label: p, value: p })));
 
-        // Mapeia torre_id => projeto
-        const mapaTorres = {};
-        torres.forEach(t => {
-          mapaTorres[t.id] = t.projeto;
-        });
-        setTorreIdToProjeto(mapaTorres);
+      setDispositivos(lista);
 
-        // Monta lista de projetos únicos
-        const projetosUnicos = [...new Set(torres.map(t => t.projeto).filter(Boolean))];
-        setProjetosOptions(projetosUnicos.map(p => ({ label: p, value: p })));
-
-        // Salva todos os dispositivos
-        setDispositivos(appliances);
-
-        // Busca dados das rotas
-        for (const appliance of appliances) {
-          if (appliance.rota) {
-            try {
-              const res = await fetch(appliance.rota);
-              const dados = await res.json();
-              setDadosMonitorados(prev => ({
-                ...prev,
-                [appliance.id]: dados,
-              }));
-            } catch {
-              setDadosMonitorados(prev => ({
-                ...prev,
-                [appliance.id]: { erro: true },
-              }));
-            }
+      for (const item of lista) {
+        if (item.rota) {
+          try {
+            const resp = await fetch(item.rota);
+            const dados = await resp.json();
+            setDadosMonitorados(prev => ({
+              ...prev,
+              [item.id]: dados
+            }));
+          } catch {
+            setDadosMonitorados(prev => ({
+              ...prev,
+              [item.id]: { erro: true }
+            }));
           }
         }
-      } catch (err) {
-        console.error('Erro ao buscar dispositivos ou torres:', err);
-      } finally {
-        setLoadingDispositivos(false);
       }
-    };
+    } catch (err) {
+      console.error('Erro ao buscar dispositivos:', err);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    buscarDadosDoCliente();
-  }, [clienteSelecionado]);
+  // Aplica filtros de cliente e projeto
+  const dispositivosFiltrados = dispositivos.filter((d) => {
+    const clienteMatch = clienteSelecionado
+      ? d.cliente_id === clienteSelecionado.value
+      : true;
 
-  // Aplica filtro por projeto, se houver
-  const dispositivosFiltrados = dispositivos.filter(d => {
-    if (!projetoSelecionado) return true;
-    const projetoDaTorre = torreIdToProjeto[d.torre_id];
-    return projetoDaTorre === projetoSelecionado.value;
+    const projetoMatch = projetoSelecionado
+      ? d.torre?.projeto === projetoSelecionado.value
+      : true;
+
+    return clienteMatch && projetoMatch;
   });
 
   return (
@@ -113,53 +88,53 @@ export default function AdminMonitoramento() {
         Monitoramento Geral dos Sensores
       </h1>
 
-      <div className="mb-6 max-w-md space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mb-6">
         <AutoSuggestDropdown
           label="Cliente"
           options={clientesOptions}
           selectedOption={clienteSelecionado}
           onChange={(opt) => setClienteSelecionado(opt)}
-          placeholder={loadingClientes ? 'Carregando clientes...' : 'Buscar cliente...'}
+          placeholder="Buscar cliente..."
         />
 
-        {projetosOptions.length > 0 && (
-          <AutoSuggestDropdown
-            label="Projeto"
-            options={projetosOptions}
-            selectedOption={projetoSelecionado}
-            onChange={(opt) => setProjetoSelecionado(opt)}
-            placeholder="Buscar projeto..."
-          />
-        )}
+        <AutoSuggestDropdown
+          label="Projeto"
+          options={projetosOptions}
+          selectedOption={projetoSelecionado}
+          onChange={(opt) => setProjetoSelecionado(opt)}
+          placeholder="Buscar projeto..."
+        />
       </div>
 
-      {clienteSelecionado ? (
-        loadingDispositivos ? (
-          <p className="text-center text-zinc-600 dark:text-zinc-300">Carregando dispositivos...</p>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {dispositivosFiltrados.map((appliance) => (
-              <div
-                key={appliance.id}
-                className="bg-white dark:bg-zinc-800 text-zinc-800 dark:text-white p-4 rounded shadow"
-              >
-                <h2 className="text-lg font-semibold mb-2">{appliance.tipo}</h2>
-                <p><strong>Nome:</strong> {appliance.nome}</p>
-                <p><strong>Descrição:</strong> {appliance.descricao}</p>
-                <p><strong>Rota:</strong> {appliance.rota}</p>
-                <p><strong>Último valor:</strong> {
-                  dadosMonitorados[appliance.id]?.valor ??
-                  (dadosMonitorados[appliance.id]?.erro
-                    ? 'Erro ao carregar'
-                    : 'Carregando...')
-                }</p>
-              </div>
-            ))}
-          </div>
-        )
+      {loading ? (
+        <p className="text-center text-zinc-600 dark:text-zinc-300">
+          Carregando dispositivos...
+        </p>
+      ) : dispositivosFiltrados.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {dispositivosFiltrados.map((appliance) => (
+            <div
+              key={appliance.id}
+              className="bg-white dark:bg-zinc-800 text-zinc-800 dark:text-white p-4 rounded shadow"
+            >
+              <h2 className="text-lg font-semibold mb-2">{appliance.tipo}</h2>
+              <p><strong>Nome:</strong> {appliance.nome}</p>
+              <p><strong>Descrição:</strong> {appliance.descricao}</p>
+              <p><strong>Cliente:</strong> {appliance.cliente_nome}</p>
+              <p><strong>Projeto:</strong> {appliance.torre?.projeto || '-'}</p>
+              <p><strong>Rota:</strong> {appliance.rota}</p>
+              <p><strong>Último valor:</strong> {
+                dadosMonitorados[appliance.id]?.valor ??
+                (dadosMonitorados[appliance.id]?.erro
+                  ? 'Erro ao carregar'
+                  : 'Carregando...')
+              }</p>
+            </div>
+          ))}
+        </div>
       ) : (
-        <p className="text-gray-500 dark:text-gray-300 text-center mt-6">
-          Selecione um cliente para visualizar os sensores.
+        <p className="text-center text-gray-500 dark:text-gray-300 mt-6">
+          Nenhum dispositivo encontrado com os filtros aplicados.
         </p>
       )}
     </DashboardLayout>

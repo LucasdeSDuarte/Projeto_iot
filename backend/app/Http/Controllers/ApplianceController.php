@@ -15,8 +15,26 @@ class ApplianceController extends Controller
     public function index(Request $request)
     {
         $perPage = $request->query('per_page', 10);
+        $clienteId = $request->query('cliente_id');
+        $projeto = $request->query('projeto');
 
-        $appliances = Appliance::with('torre.cliente')->paginate($perPage);
+        $query = Appliance::with('torre.cliente');
+
+        // Filtra por cliente_id (tabela torre)
+        if ($clienteId) {
+            $query->whereHas('torre', function ($q) use ($clienteId) {
+                $q->where('cliente_id', $clienteId);
+            });
+        }
+
+        // Filtra por projeto (campo na tabela torre)
+        if ($projeto) {
+            $query->whereHas('torre', function ($q) use ($projeto) {
+                $q->where('projeto', $projeto);
+            });
+        }
+
+        $appliances = $query->paginate($perPage);
 
         return response()->json([
             'status' => 'success',

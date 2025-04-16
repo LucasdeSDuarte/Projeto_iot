@@ -1691,3 +1691,266 @@
       at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
 18:32:32 [vite] (client) hmr update /src/App.jsx, /src/index.css
 18:32:33 [vite] (client) hmr update /src/App.jsx, /src/index.css
+20:55:05 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:55:05 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:56:44 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:56:44 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:56:44 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:57:13 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:57:13 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:57:13 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:57:15 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:57:15 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:59:14 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:59:14 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:59:14 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+20:59:15 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:03:13 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:03:14 [vite] (client) hmr update /src/App.jsx, /src/index.css
+21:03:14 [vite] (client) hmr invalidate /src/pages/AdminMonitoramento.jsx Could not Fast Refresh (export removed)
+21:03:14 [vite] (client) hmr update /src/App.jsx, /src/index.css
+21:03:14 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:09:49 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:09:49 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:09:49 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:09:50 [vite] (client) hmr update /src/pages/AdminMonitoramento.jsx, /src/index.css
+21:21:20 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:21:20 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:21:20 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:21:20 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:21:49 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:21:49 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:21:50 [vite] (client) hmr update /src/pages/Dispositivos.jsx, /src/index.css
+21:22:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+21:22:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+21:22:45 [vite] (client) hmr update /src/componente/form/FormAppliance.jsx, /src/index.css
+21:25:06 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+21:25:07 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+21:25:07 [vite] (client) hmr update /src/componente/form/FormSensor.jsx, /src/index.css
+21:25:07 [vite] (client) hmr invalidate /src/componente/form/FormSensor.jsx Could not Fast Refresh (export removed)
+21:25:07 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+21:36:53 [vite] (client) hmr update /src/componente/DashboardLayout.jsx, /src/index.css
+21:36:53 [vite] (client) hmr update /src/componente/DashboardLayout.jsx, /src/index.css
+21:39:01 [vite] (client) hmr update /src/componente/DashboardLayout.jsx, /src/index.css
+21:39:02 [vite] (client) hmr update /src/componente/DashboardLayout.jsx, /src/index.css
+09:29:29 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+09:29:29 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+09:29:29 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+09:29:30 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+09:34:44 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+09:34:44 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+09:34:44 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+09:34:44 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:16:40 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:16:40 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:31 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:25:31 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:25:31 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:25:31 [vite] Internal server error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+10:25:31 [vite] Internal server error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+10:25:32 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:32 [vite] Internal server error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+10:25:32 [vite] (client) Pre-transform error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+10:25:32 [vite] Internal server error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+      at TransformPluginContext._formatLog (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47885:41)
+      at TransformPluginContext.error (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47882:16)
+      at normalizeUrl (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46015:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46134:37
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:46061:7)
+      at async EnvironmentPluginContainer.transform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:47680:18)
+      at async loadAndTransform (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:41327:27)
+      at async viteTransformMiddleware (file:///var/www/html/projetos-iot/frontend/node_modules/vite/dist/node/chunks/dep-Pj_jxEzN.js:42807:24)
+10:25:51 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:52 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:52 [vite] (client) Pre-transform error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+10:25:52 [vite] (client) Pre-transform error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+10:25:59 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:59 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:59 [vite] (client) Pre-transform error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+10:25:59 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:25:59 [vite] (client) Pre-transform error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+10:26:00 [vite] (client) Pre-transform error: Failed to resolve import "../componente/DashboardLayout" from "src/componente/form/FormAlarme.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /var/www/html/projetos-iot/frontend/src/componente/form/FormAlarme.jsx:2:28
+  17 |  var _s = $RefreshSig$();
+  18 |  import React, { useState, useEffect } from "react";
+  19 |  import DashboardLayout from "../componente/DashboardLayout";
+     |                               ^
+  20 |  import { Plus, Pencil, Trash2, X } from "lucide-react";
+  21 |  import api from "../services/api";
+10:26:01 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:26:01 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:26:01 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:39:58 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:39:58 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:45:30 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:31 [vite] (client) hmr update /src/App.jsx, /src/index.css
+10:45:31 [vite] (client) hmr invalidate /src/pages/Sensores.jsx Could not Fast Refresh (export removed)
+10:45:31 [vite] (client) hmr update /src/App.jsx, /src/index.css
+10:45:32 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:39 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:40 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:48 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:48 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:48 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:56 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:56 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:45:57 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:46:04 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:46:04 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:46:05 [vite] (client) hmr update /src/pages/Sensores.jsx, /src/index.css
+10:46:13 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:13 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:14 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:35 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:35 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:40 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:40 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:40 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:40 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:51 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:46:52 [vite] (client) hmr update /src/App.jsx, /src/index.css
+10:46:52 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:25 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:25 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:26 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:26 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:36 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:36 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:36 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:43 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:43 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:44 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:44 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:52 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:52 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:53 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:50:54 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:51:14 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:51:14 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:51:15 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:58:08 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:08 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:12 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:12 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:58:12 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:29 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:30 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:30 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:41 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:41 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:42 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:42 [vite] (client) hmr invalidate /src/componente/form/FormAlarme.jsx Could not Fast Refresh (export removed)
+10:58:42 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:58:46 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:58:46 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:58:46 [vite] (client) hmr invalidate /src/componente/form/FormAlarme.jsx Could not Fast Refresh (export removed)
+10:58:46 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:58:46 [vite] (client) hmr update /src/componente/form/FormAlarme.jsx, /src/index.css
+10:59:03 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:59:03 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css
+10:59:04 [vite] (client) hmr update /src/pages/Alertas.jsx, /src/index.css

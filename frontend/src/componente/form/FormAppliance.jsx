@@ -125,7 +125,7 @@ export default function FormAppliance({ initialData = {}, onSubmit, onCancel }) 
       />
 
       <div>
-        <label className="block text-sm font-medium">Tipo</label>
+        <label className="block text-sm font-medium">Modelo / Utilização</label>
         <input
           type="text"
           value={tipo}
