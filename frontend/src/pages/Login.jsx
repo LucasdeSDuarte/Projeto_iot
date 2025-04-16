@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import ParticlesBackground from '../componente/ParticlesBackground';
 import axios from 'axios';
 import { setAuthToken } from '../services/api';
+import Cookies from 'js-cookie';
+import ReCAPTCHA from 'react-google-recaptcha';
+
 
 const API = import.meta.env.VITE_API_URL;
 
@@ -19,6 +22,7 @@ export default function Login() {
   const loginInputRef = useRef(null);
   const senhaInputRef = useRef(null);
   const navigate = useNavigate();
+  const recaptchaRef = useRef(null);
 
   useEffect(() => {
     if (tiltRef.current) {
@@ -31,13 +35,37 @@ export default function Login() {
       });
     }
 
-    const savedLogin = localStorage.getItem('rememberedLogin');
-    if (savedLogin) {
-      setLogin(savedLogin);
+    // Carregar recaptcha de forma explícita
+    const loadRecaptchaScript = () => {
+      const existingScript = document.getElementById('recaptcha-script');
+      if (!existingScript) {
+        const script = document.createElement('script');
+        script.src = 'https://www.google.com/recaptcha/api.js';
+        script.id = 'recaptcha-script';
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+      }
+    };
+    
+    loadRecaptchaScript();
+
+    // Verificar se há login salvo em cookies primeiro
+    const cookieLogin = Cookies.get('rememberedLogin');
+    if (cookieLogin) {
+      setLogin(cookieLogin);
       setRememberMe(true);
       setTimeout(() => senhaInputRef.current?.focus(), 100);
     } else {
-      setTimeout(() => loginInputRef.current?.focus(), 100);
+      // Fallback para localStorage
+      const storageLogin = localStorage.getItem('rememberedLogin');
+      if (storageLogin) {
+        setLogin(storageLogin);
+        setRememberMe(true);
+        setTimeout(() => senhaInputRef.current?.focus(), 100);
+      } else {
+        setTimeout(() => loginInputRef.current?.focus(), 100);
+      }
     }
   }, []);
 
@@ -59,11 +87,19 @@ export default function Login() {
 
     try {
       setLoading(true);
-      const response = await axios.post(`${API}/login`, { login, senha });
+      const response = await axios.post(`${API}/login`, { 
+        login, 
+        senha,
+        'g-recaptcha-response': recaptchaRef.current?.getValue()
 
+      });
+
+      // Salvar em cookies se "lembrar meu login" estiver marcado
       if (rememberMe) {
-        localStorage.setItem('rememberedLogin', login);
+        Cookies.set('rememberedLogin', login, { expires: 30 }); // 30 dias
+        localStorage.setItem('rememberedLogin', login); // Para compatibilidade
       } else {
+        Cookies.remove('rememberedLogin');
         localStorage.removeItem('rememberedLogin');
       }
 
@@ -84,6 +120,11 @@ export default function Login() {
         tiltRef.current.classList.add('error-shake');
         setTimeout(() => tiltRef.current.classList.remove('error-shake'), 500);
       }
+      
+      if (recaptchaRef.current) {
+        recaptchaRef.current.reset();
+      }
+
     } finally {
       setLoading(false);
     }
@@ -135,6 +176,9 @@ export default function Login() {
         .tooltip-box {
           border: 1px solid #10b981;
           box-shadow: 0 4px 15px rgba(16, 185, 129, 0.15);
+          width: 350px;
+          max-width: 90vw;
+          z-index: 50;
         }
         .input-field {
           border: 1px solid #10b981;
@@ -170,7 +214,19 @@ export default function Login() {
           <p className="text-sm sm:text-base text-gray-400 text-center mb-6">
             Sistema de monitoramento industrial
           </p>
-
+          <div className="mt-6 text-center">
+          <div className="relative group inline-block">
+            <span className="text-sm text-gray-400 cursor-pointer underline decoration-dotted">
+              Precisa de ajuda?
+            </span>
+            <div className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-3 w-[350px] max-w-[90vw] px-4 py-3 bg-zinc-900 text-gray-300 rounded-lg shadow-lg border border-green-500 opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 z-50">
+              <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-3 h-3 bg-zinc-900 border-l border-t border-green-500 rotate-45 z-[-1]"></div>
+              <strong className="text-green-400 block mb-1">Sistema de monitoramento IoT</strong>
+              Em caso de problemas de acesso, contate o <strong>departamento comercial</strong> pelo telefone <span className="text-green-300">(11) 3456-7890</span><br />
+              ou email <span className="text-green-300">suporte@alpina.com.br</span>
+            </div>
+          </div>
+        </div>
           <form className="space-y-5" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="login" className="block mb-1 font-medium text-sm text-white flex items-center">
@@ -237,8 +293,12 @@ export default function Login() {
               </div>
             )}
 
-            <div className="h-[60px] flex items-center justify-center captcha-box rounded-md text-gray-400 text-sm bg-black bg-opacity-50">
-              <span>Google reCAPTCHA v2</span>
+            <div className="flex items-center justify-center rounded-md ">
+            <ReCAPTCHA
+              sitekey="6LcZIxsrAAAAAHSHnPAeI2UBKrE7zmCfXZWRKf_n"
+              theme="dark"
+              ref={recaptchaRef}
+            />
             </div>
 
             <button
@@ -259,19 +319,6 @@ export default function Login() {
               )}
             </button>
           </form>
-
-          <div className="mt-6 text-center">
-            <div className="relative group inline-block">
-              <span className="text-sm text-gray-400 cursor-pointer underline decoration-dotted">
-                Precisa de ajuda?
-              </span>
-              <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-72 bg-black tooltip-box text-gray-300 text-sm rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 z-10">
-                <strong className="text-green-400">Sistema de monitoramento IoT</strong><br />
-                Em caso de problemas de acesso, contate o <strong>departamento comercial</strong> pelo telefone <span className="text-green-300">(11) 3456-7890</span> ou email <span className="text-green-300">suporte@alpina.com.br</span>
-              </div>
-            </div>
-          </div>
-
           <div className="mt-6 text-center text-sm text-gray-500">
             © {new Date().getFullYear()} ALPINA EQUIPAMENTOS INDUSTRIAIS
           </div>

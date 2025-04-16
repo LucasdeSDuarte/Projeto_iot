@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Http;
 use App\Models\Cliente;
 use App\Models\ColaboradorFake;
 
@@ -18,6 +18,7 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(), [
             'login' => 'required|string',
             'senha' => 'required|string',
+            'g-recaptcha-response' => 'required|string',
         ]);
 
         if ($validator->fails()) {
@@ -26,10 +27,24 @@ class AuthController extends Controller
 
         $login = $request->login;
         $senha = $request->senha;
+        $recaptchaToken = $request->input('g-recaptcha-response');
+
+        // 2. Validação do reCAPTCHA
+        $verify = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => config('services.recaptcha.secret'),
+            'response' => $recaptchaToken,
+            'remoteip' => $request->ip(),
+        ]);
+
+        $verifyData = $verify->json();
+
+        if (!($verifyData['success'] ?? false)) {
+            return response()->json(['error' => 'Falha na verificação do reCAPTCHA'], 400);
+        }
 
         /*
         |--------------------------------------------------------------------------
-        | 2. Autenticação do colaborador (banco externo)
+        | 3. Autenticação do colaborador (banco externo)
         |--------------------------------------------------------------------------
         */
         try {
@@ -69,7 +84,7 @@ class AuthController extends Controller
 
         /*
         |--------------------------------------------------------------------------
-        | 3. Autenticação do cliente (banco local)
+        | 4. Autenticação do cliente (banco local)
         |--------------------------------------------------------------------------
         */
         $cliente = Cliente::where('login', $login)->first();
@@ -88,7 +103,7 @@ class AuthController extends Controller
 
         /*
         |--------------------------------------------------------------------------
-        | 4. Falha geral de autenticação
+        | 5. Falha geral de autenticação
         |--------------------------------------------------------------------------
         */
         return response()->json([

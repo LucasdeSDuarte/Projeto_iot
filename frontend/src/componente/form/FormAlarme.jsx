@@ -161,7 +161,7 @@ export default function FormAlarme({ initialData = {}, onSubmit, onCancel }) {
       </div>
 
       <div>
-        <label className="block text-sm font-medium">Valor do Alarme</label>
+        <label className="block text-sm font-medium">Valor do Alarme (MAIOR QUE)</label>
         <input
           type="number"
           step="0.01"
