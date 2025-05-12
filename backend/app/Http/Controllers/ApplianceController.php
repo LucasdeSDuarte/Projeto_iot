@@ -119,6 +119,18 @@ class ApplianceController extends Controller
         }
     }
 
+    public function listaSimples(Request $request)
+    {
+        $query = \App\Models\Appliance::query();
+
+        if ($request->has('torre_id')) {
+            $query->where('torre_id', $request->torre_id);
+        }
+
+        return $query->orderBy('tipo')->get(['id', 'tipo', 'torre_id']);
+    }
+
+
     /**
      * Excluir um appliance.
      */

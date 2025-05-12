@@ -26,6 +26,7 @@ Route::post('/login', [AuthController::class, 'login']);
 
 // Rotas dos Clientes
 Route::get('/clientes', [ClienteController::class, 'index']);
+Route::get('/clientes-lista', [ClienteController::class, 'listaSimples']);
 Route::post('/clientes', [ClienteController::class, 'store']);
 Route::put('/clientes/{cliente}', [ClienteController::class, 'update']);
 // Você pode incluir o DELETE se necessário:
@@ -33,6 +34,7 @@ Route::put('/clientes/{cliente}', [ClienteController::class, 'update']);
 
 // Rotas de Torres
 Route::get('/torres', [TorreController::class, 'index']);
+Route::get('/torres-lista', [TorreController::class, 'listaSimples']);
 Route::post('/torres', [TorreController::class, 'store']);
 Route::put('/torres/{torre}', [TorreController::class, 'update']);
 Route::delete('/torres/{torre}', [TorreController::class, 'destroy']);
@@ -48,12 +50,14 @@ Route::get('/projetos', function () {
 
 // Rotas de Appliances
 Route::get('/appliances', [ApplianceController::class, 'index']);
+Route::get('/appliances-lista', [ApplianceController::class, 'listaSimples']);
 Route::post('/appliances', [ApplianceController::class, 'store']);
 Route::put('/appliances/{appliance}', [ApplianceController::class, 'update']);
 Route::delete('/appliances/{appliance}', [ApplianceController::class, 'destroy']);
 
 // Rotas de Sensores
 Route::get('/sensores', [SensorController::class, 'index']);
+Route::get('/sensores-lista', [SensorController::class, 'listaSimples']);
 Route::post('/sensores', [SensorController::class, 'store']);
 Route::put('/sensores/{sensor}', [SensorController::class, 'update']);
 Route::delete('/sensores/{sensor}', [SensorController::class, 'destroy']);

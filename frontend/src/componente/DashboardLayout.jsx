@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import {
   LogOut, Home, Bell, Activity, Users, Server,
-  Cpu, AlertTriangle, Monitor, Menu
+  Cpu, AlertTriangle, Monitor, Menu, Code2, Network
 } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import ToggleThemeButton from '../componente/botao/ToggleThemeButton';
@@ -28,11 +28,13 @@ export default function DashboardLayout({ children, tipo }) {
     { label: 'Sensores', icon: Activity, path: '/admin/sensores' },
     { label: 'Alertas ', icon: AlertTriangle, path: '/admin/alertas' },
     { label: 'Histórico', icon: Bell, path: '/admin/historico' },
-    { label: 'Topologia', icon: Bell, path: '/admin/topologia' },
+    { label: 'Topologia', icon: Network, path: '/admin/topologia' },
+    { label: 'Gerar Payload', icon: Code2, path: '/admin/gerar-topico' }
   ] : [
     { label: 'Home', icon: Home, path: '/cliente/dashboard' },
     { label: 'Meu Monitoramento', icon: Monitor, path: '/cliente/monitoramento' },
     { label: 'Histórico', icon: Bell, path: '/cliente/historico' },
+
   ];
 
   return (

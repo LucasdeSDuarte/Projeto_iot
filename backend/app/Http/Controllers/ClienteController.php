@@ -37,6 +37,11 @@ class ClienteController extends Controller
             ],
         ]);
     }
+    public function listaSimples()
+    {
+        return \App\Models\Cliente::orderBy('nome')
+            ->get(['id', 'nome', 'email', 'ativo']);
+    }
 
     /**
      * Cadastrar um novo cliente.

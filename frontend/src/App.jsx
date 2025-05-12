@@ -14,6 +14,7 @@ import ClienteMonitoramento from './pages/ClienteMonitoramento';
 import HistoricoColaborador from './pages/HistoricoColaborador';
 import HistoricoCliente from './pages/HistoricoCliente';
 import Topologia from './pages/Topologia';
+import GeradorTopico from './pages/GeradorTopico';
 
 
 export default function App() {
@@ -120,7 +121,16 @@ export default function App() {
           </PrivateRoute>
         }
       />
+      <Route
+        path="/admin/gerar-topico"
+        element={
+          <PrivateRoute tipo="colaborador">
+            <GeradorTopico />
+          </PrivateRoute>
+        }
+      />
     </Routes>
+    
     
   );
 }

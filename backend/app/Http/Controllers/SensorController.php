@@ -102,6 +102,18 @@ class SensorController extends Controller
         }
     }
 
+    public function listaSimples(Request $request)
+    {
+        $query = \App\Models\Sensor::query();
+
+        if ($request->has('appliance_id')) {
+            $query->where('appliance_id', $request->appliance_id);
+        }
+
+        return $query->orderBy('tipo')->get(['id', 'tipo', 'identificador', 'appliance_id']);
+    }
+
+
     /**
      * Excluir um sensor.
      */

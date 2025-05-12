@@ -111,6 +111,19 @@ class TorreController extends Controller
         }
     }
 
+    public function listaSimples(Request $request)
+    {
+        $query = \App\Models\Torre::query();
+
+        if ($request->has('cliente_id')) {
+            $query->where('cliente_id', $request->cliente_id);
+        }
+
+        return $query->orderBy('nome')
+                    ->get(['id', 'nome', 'cliente_id']);
+    }
+
+
     public function destroy(Torre $torre)
     {
         try {
