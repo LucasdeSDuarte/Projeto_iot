@@ -7,7 +7,6 @@ const API = import.meta.env.VITE_API_URL;
 export default function FormAppliance({ initialData = {}, onSubmit, onCancel }) {
   const [tipo, setTipo] = useState(initialData?.tipo || '');
   const [descricao, setDescricao] = useState(initialData?.descricao || '');
-  const [rota, setRota] = useState(initialData?.rota || '');
   const [ativo, setAtivo] = useState(initialData?.ativo ?? true);
 
   const [clienteSelecionado, setClienteSelecionado] = useState(null);
@@ -20,7 +19,6 @@ export default function FormAppliance({ initialData = {}, onSubmit, onCancel }) 
 
   useEffect(() => {
     carregarClientesETorres();
-    if (!initialData?.id) gerarProximaRota();
   }, []);
 
   useEffect(() => {
@@ -67,17 +65,6 @@ export default function FormAppliance({ initialData = {}, onSubmit, onCancel }) 
     }
   };
 
-  const gerarProximaRota = async () => {
-    try {
-      const response = await axios.get(`${API}/appliances`);
-      const total = Array.isArray(response.data.data) ? response.data.data.length : 0;
-      const proximoNumero = (total + 1).toString().padStart(2, '0');
-      setRota(`/dispositivosmonitoramento${proximoNumero}`);
-    } catch {
-      setRota('/dispositivosmonitoramento01');
-    }
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit({
@@ -86,7 +73,6 @@ export default function FormAppliance({ initialData = {}, onSubmit, onCancel }) 
       torre_id: torreSelecionada?.value,
       tipo,
       descricao,
-      rota,
       ativo,
     });
   };
@@ -142,16 +128,6 @@ export default function FormAppliance({ initialData = {}, onSubmit, onCancel }) 
           value={descricao}
           onChange={(e) => setDescricao(e.target.value)}
           className="w-full p-2 border rounded-md bg-white dark:bg-zinc-800 dark:text-white"
-        />
-      </div>
-
-      <div>
-        <label className="block text-sm font-medium">Rota de Acesso (URL)</label>
-        <input
-          type="text"
-          value={rota}
-          disabled
-          className="w-full p-2 border rounded-md bg-gray-100 dark:bg-zinc-700 text-gray-600 dark:text-gray-400 cursor-not-allowed"
         />
       </div>
 

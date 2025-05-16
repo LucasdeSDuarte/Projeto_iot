@@ -53,6 +53,7 @@ Route::get('/appliances', [ApplianceController::class, 'index']);
 Route::get('/appliances-lista', [ApplianceController::class, 'listaSimples']);
 Route::post('/appliances', [ApplianceController::class, 'store']);
 Route::put('/appliances/{appliance}', [ApplianceController::class, 'update']);
+Route::put('/appliances/{id}/topico', [ApplianceController::class, 'atualizarTopico']);
 Route::delete('/appliances/{appliance}', [ApplianceController::class, 'destroy']);
 
 // Rotas de Sensores

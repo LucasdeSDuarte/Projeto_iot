@@ -126,7 +126,7 @@ export default function Dispositivos() {
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Cliente / Nome</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Modelo / Utilização</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Torre</th>
-              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Rota</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Tópico</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-600 dark:text-gray-300">Ações</th>
             </tr>
           </thead>

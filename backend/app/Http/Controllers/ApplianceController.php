@@ -130,6 +130,32 @@ class ApplianceController extends Controller
         return $query->orderBy('tipo')->get(['id', 'tipo', 'torre_id']);
     }
 
+    public function atualizarTopico(Request $request, $id)
+    {
+        try {
+            $validated = $request->validate([
+                'rota' => 'required|string|max:255',
+            ]);
+
+            $appliance = Appliance::findOrFail($id);
+            $appliance->rota = $validated['rota'];
+            $appliance->save();
+
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Tópico MQTT (rota) atualizado com sucesso.',
+                'data' => new ApplianceResource($appliance)
+            ]);
+        } catch (\Exception $e) {
+            Log::error('Erro ao atualizar rota do appliance', ['error' => $e->getMessage()]);
+            return response()->json([
+                'status' => 'error',
+                'message' => 'Erro ao atualizar tópico.',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
+
 
     /**
      * Excluir um appliance.
